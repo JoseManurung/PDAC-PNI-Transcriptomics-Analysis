@@ -1,6 +1,7 @@
 ## 📜 Copyright & Licensing
 > [!CAUTION]
-> **Academic Integrity & Copyright Notice**
+> **Academic Integrity & Copyright Notice**.
+> 
 > This project, including all R scripts, datasets, and visualizations, is the academic work of **Yosia Jose Rasdiva Manurung**. 
 > Unauthorized use, reproduction, or redistribution of this content for commercial purposes or academic submission by others is **strictly prohibited**. For permissions or collaboration, please contact the author.  
 
