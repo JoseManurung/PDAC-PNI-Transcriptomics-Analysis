@@ -11,7 +11,7 @@ Integrative transcriptomic profiling and differential expression analysis (DEA) 
 ---
 
 ## 1. Research Objectives & Comparison Groups
-The primary goal of this study is to identify Differentially Expressed Genes (DEGs) across **six PNI-related clinical contrasts**. This systematic approach allows us to isolate the specific transcriptomic signatures driven by neural invasion versus those driven by general tumorigenesis.
+The primary goal of this study is to identify Differentially Expressed Genes (DEGs) across **six PNI-related clinical contrasts**. This systematic approach allows me to isolate the specific transcriptomic signatures driven by neural invasion versus those driven by general tumorigenesis.
 
 
 
