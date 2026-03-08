@@ -5,10 +5,6 @@
 > This project, including all R scripts, datasets, and visualizations, is the academic work of **Yosia Jose Rasdiva Manurung**. 
 > Unauthorized use, reproduction, or redistribution of this content for commercial purposes or academic submission by others is **strictly prohibited**. For permissions or collaboration, please contact the author.  
 
-
-# PDAC-PNI-Transcriptomics-Analysis
-Integrative transcriptomic profiling and differential expression analysis (DEA) to identify molecular signatures driving Perineural Invasion (PNI) in Pancreatic Ductal Adenocarcinoma using the GSE102238 dataset.
-
 # Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC)
 **Author:** Yosia Jose Rasdiva Manurung  
 **Affiliation:** Diponegoro University  
