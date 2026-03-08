@@ -1,5 +1,6 @@
 ## 📜 Copyright & Licensing
 > [!CAUTION]
+> **Academic Integrity & Copyright Notice**
 > This project, including all R scripts, datasets, and visualizations, is the academic work of **Yosia Jose Rasdiva Manurung**. 
 > Unauthorized use, reproduction, or redistribution of this content for commercial purposes or academic submission by others is **strictly prohibited**. For permissions or collaboration, please contact the author.  
 
@@ -60,5 +61,11 @@ This research confirms that while the malignant phenotype is the primary driver 
 * **Sun, Y., et al. (2024).** Frontiers in Oncology, 14, 1421067.
 * **Yang, M. W., et al. (2020).** Cancer Research, 80(10), 1991.
 
+## 📂 Repository Structure
+* **`/Dataset`**: Curated expression matrix and metadata from GSE102238.
+* **`/Scripts`**: R scripts used for normalization, DEA, and visualization.
+* **`/Results`**: 
+    * `Data_Tables/`: Statistical output of DEGs (CSV/Excel tables).
+    * `Plots/`: Visualizations (Volcano plots, heatmaps, and enrichment plots).
 ---
 © 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
