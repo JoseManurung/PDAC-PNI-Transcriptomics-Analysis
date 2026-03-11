@@ -62,7 +62,7 @@ This research confirms that while the malignant phenotype is the primary driver 
 * **`/Dataset`**: Curated expression matrix and metadata from GSE102238.
 * **`/Results`**: 
     * `Data_Tables/`: Statistical output of DEGs (CSV/Excel tables).
-    * `Plots/`: Visualizations (Volcano plots, heatmaps, and enrichment plots).
+    * `Plots/`: Visualizations (Boxplot, density plot, UMAP plot, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot).
 * **`/Script`**: R scripts used for normalization, DEA, and visualization.
 ---
 © 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
