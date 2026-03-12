@@ -29,6 +29,12 @@ The primary goal of this study is to identify Differentially Expressed Genes (DE
 ## 2. Project Overview
 Pancreatic Ductal Adenocarcinoma (PDAC) progression is heavily influenced by **Perineural Invasion (PNI)**. This study utilizes the **GSE102238** dataset (100 samples) to map the molecular crosstalk between malignant cells and the peripheral nervous system.
 
+
+Pancreatic Ductal Adenocarcinoma (PDAC) is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)**—a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
+
+Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) [Chen et al. (2023); Sarantis et al. (2020); Sun et al. (2024)]. This study utilizes the **GSE102238 dataset** [Yang et al. (2020)] to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
+
+
 ## 3. Methodology & Workflow
 
 The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
@@ -75,7 +81,7 @@ Below is the visual representation of the analytical steps performed in this pro
 
 To illustrate the extreme variance in gene expression, this analysis compares highly stable transcriptomic profiles against those undergoing massive dysregulation ("eruption"):
 
-| **Condition: Stability** (Intra-tissue Comparison) | **Condition: Eruption** (Extreme Contrast) |
+| **Condition: Stability** (Normal Tissue) | **Condition: Eruption** (Extreme Contrast) |
 | :---: | :---: |
 | ![Stability Plot](Results/Plots/Volcano_2_PDAC_pni_normal.png) | ![Eruption Plot](Results/Plots/Volcano_5_PDAC_extreme_contrast.png) |
 | *Stability Example: The PNI effect within normal tissues shows minimal differential expression.* | *Eruption Example: The Extreme Contrast reveals massive gene activation and suppression.* |
