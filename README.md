@@ -77,7 +77,7 @@ To illustrate the extreme variance in gene expression, this analysis compares hi
 
 | **Condition: Stability** (Intra-tissue Comparison) | **Condition: Eruption** (Extreme Contrast) |
 | :---: | :---: |
-| ![Stability Plot](plots/Volcano_1_PDAC_pni_tumor.png) | ![Eruption Plot](plots/Volcano_5_PDAC_extreme_contrast.png) |
+| ![Stability Plot](Resluts/Plots/Volcano_1_PDAC_pni_tumor.png) | ![Eruption Plot](Results/Plots/Volcano_5_PDAC_extreme_contrast.png) |
 | *Stability Example: The PNI effect within tumor tissues shows minimal differential expression.* | *Eruption Example: The Extreme Contrast reveals massive gene activation and suppression.* |
 
 * **Key Insight:** Pancreatic Duct Adenocarcinoma (PDAC) maintains high transcriptomic stability at the tissue level (Tumor-only or Normal-only). However, it undergoes a massive "expression eruption" when transitioning from a normal state to a malignant, nerve-involved (PNI-positive) state.
