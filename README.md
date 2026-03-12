@@ -100,7 +100,7 @@ The heatmaps illustrate the contrast between homeostatic stability and significa
 
 ### 4.3. Biomarker Identification & Stability Analysis
 
-To isolate the core genetic drivers, i intersected multiple clinical contrasts and verified expression stability:
+To isolate the core genetic drivers, I intersected multiple clinical contrasts and verified expression stability:
 
 | **Core Biomarker Intersection** | **Expression Stability Profile** |
 | :---: | :---: |
@@ -125,7 +125,7 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 
 ## 5. Conclusion
 
-This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, i have established several key conclusions:
+This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, I have established several key conclusions:
 
 * **Malignancy Overrides Localization:** The transcriptomic landscape is dominated by a robust malignant signal that remains consistent regardless of localized neural involvement. The primary oncogenic "engine" of PDAC is the main driver of the observed mRNA profiles.
 * **The "Eruption" Signature:** While PNI-only contrasts show high homeostatic stability, the transition from normal to malignant PNI-positive states triggers a massive molecular "eruption." This is evidenced by a core consensus signature of **4,857 shared DEGs**, including high-confidence biomarkers such as **CEACAM5, S100P, CST2,** and **TMPRSS4**.
