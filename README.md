@@ -37,21 +37,34 @@ The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combine
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
 2.  **Normalization:** Log2 transformation and Quantile Normalization to stabilize expression distributions.
 3.  **Differential Expression (DEA):** Modeled using the `limma` package across six distinct clinical contrasts.
-4.  **Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt`.
-5.  **Visualization:** Generation of Boxplot, Density Plot, UMAP Plot, Volcano Plots, Heatmaps, Scatter Plot, and Venn Diagram using `ggplot2` and `pheatmap` to assess data distribution and DEG significance.
-6.  **Functional Enrichment:** Pathway analysis using Gene Ontology (GO) and KEGG.
+4.  **Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
+5.  **Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
+    * **Boxplot & Density:** `ggplot()` with `stat_boxplot` and `geom_density` to verify normalization.
+    * **UMAP:** `umap()` algorithm followed by `geom_point()` to visualize 2D sample clustering.
+    * **Volcano Plot:** Custom function `make_volcano()` mapping log2FC vs. -log10 Adjusted P-value.
+    * **Heatmap:** `pheatmap()` using Global ANOVA and Ward.D2 clustering for top 50 DEGs.
+    * **Scatter Plot:** `ggplot()` with `geom_smooth(method = "gam")` to profile gene expression stability (Mean vs. SD) across clinical cohorts.
+    * **Venn Diagram:** `ggVennDiagram()` with a 6-set elliptical layout (`shape_id = "601"`) to identify core biomarkers across all clinical contrasts.
+6.  **Functional Enrichment:** Pathway analysis using Gene Ontology (GO) and KEGG to interpret biological significance.
 
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 
-```mermaid
-graph TD
-    A[GEO Dataset] --> B(Data Preprocessing)
-    B --> C(Normalization)
-    C --> D(Differential Expression - limma)
-    D --> E(Annotation)
-    E --> F(Visualization)
-    F --> G[Biological Interpretation]
+**GEO Dataset** &nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;▼  
+**Data Preprocessing** &nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;▼  
+**Normalization** &nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;▼  
+**Differential Expression (limma)** &nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;▼  
+**Annotation & Filtering** &nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;▼  
+**Visualization** &nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;▼  
+**Biological Interpretation**
+
+---
 
 
 ## 4. Key Findings
