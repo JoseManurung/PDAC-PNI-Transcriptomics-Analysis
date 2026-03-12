@@ -71,15 +71,11 @@ rm(list = ls())
 # Forces R to display full decimal values (e.g., 0.00001) instead of exponential (1e-05)
 options(scipen = 999)
 
-# A.2.3. Initialize Random Number Generator
-# Ensures that stochastic processes like UMAP or t-SNE yield identical results every run
-set.seed(123)
-
-# A.2.4. Set String Conversion Behavior
+# A.2.3. Set String Conversion Behavior
 # Prevents R from automatically converting character strings into factor levels
 options(stringsAsFactors = FALSE)
 
-# A.2.5. Configure Graphical Device Background
+# A.2.4. Configure Graphical Device Background
 # Ensures that saved plots maintain a consistent white background regardless of OS
 options(bitmapType = 'cairo')
 
@@ -575,11 +571,15 @@ write.csv(ex_clean, "results/Normalized_Expression_Matrix_Clean_for_UMAP.csv", r
 # Ensuring the matrix orientation is correct for the UMAP function
 umap_input <- t(ex_clean)
 
-# N.5. Execute UMAP algorithm
+# N.5. Initialize Random Number Generator
+# Ensures that stochastic processes like UMAP or t-SNE yield identical results every run
+set.seed(123)
+
+# N.6. Execute UMAP algorithm
 # Projecting high-dimensional gene expression data into 2D space
 umap_result <- umap(umap_input)
 
-# N.6. Construct a structured data frame for visualization
+# N.7. Construct a structured data frame for visualization
 # Extracting the 2D layout coordinates and appending clinical group metadata
 umap_df <- data.frame(
   UMAP1 = umap_result$layout[, 1],
@@ -587,15 +587,15 @@ umap_df <- data.frame(
   Group = pData(gset)$group
 )
 
-# N.7. Optional: Export Cleaned Input Matrix for UMAP
+# N.8. Optional: Export Cleaned Input Matrix for UMAP
 # Saves the transposed, NA-filtered expression matrix used as the UMAP algorithm input
 write.csv(as.data.frame(umap_input), "results/UMAP_Input_Matrix_Transposed.csv", row.names = TRUE)
 
-# N.8. Export UMAP Dimensionality Reduction Coordinates
+# N.9. Export UMAP Dimensionality Reduction Coordinates
 # Persists the 2D layout coordinates alongside clinical metadata for reproducibility
 write.csv(umap_df, "results/UMAP_Coordinates_and_Metadata.csv", row.names = TRUE)
 
-# N.9. Generate UMAP Visualization
+# N.10. Generate UMAP Visualization
 # Visualizing sample clustering patterns based on global transcriptional profiles
 umap_plot <- ggplot(umap_df, aes(x = UMAP1, y = UMAP2, color = Group)) +
   geom_point(size = 3, alpha = 0.8) +
@@ -616,11 +616,11 @@ umap_plot <- ggplot(umap_df, aes(x = UMAP1, y = UMAP2, color = Group)) +
     color = "Clinicopathological Group"
   )
 
-# N.10. Graphics Device Verification
+# N.11. Graphics Device Verification
 # Rendering the visualization to audit sample clustering and group separation
 print(umap_plot)
 
-# N.11. Automated Publication-Quality Export
+# N.12. Automated Publication-Quality Export
 # Saving with naming convention optimized for consistency
 ggsave(
   filename = "plots/UMAP_PDAC_100.png", 
