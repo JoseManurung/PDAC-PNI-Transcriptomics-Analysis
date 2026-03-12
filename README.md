@@ -50,7 +50,6 @@ The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combine
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 
-| Analysis Step |
 | :---: |
 | **GEO Dataset** |
 | ▼ |
