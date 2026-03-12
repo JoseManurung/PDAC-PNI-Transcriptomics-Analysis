@@ -93,7 +93,7 @@ The heatmaps illustrate the contrast between homeostatic stability and significa
 | **Condition: Stability** (Normal Tissue) | **Condition: Eruption** (Extreme Contrast) |
 | :---: | :---: |
 | ![Heatmap Normal](Results/Plots/H2_PDAC_pni_normal.png) | ![Heatmap Extreme](Results/Plots/H5_PDAC_extreme.png) |
-| *H2: Minimal expression variance in normal tissues regardless of PNI status.* | *H5: Distinct bifurcated expression patterns in PNI-Pos Tumor vs. PNI-Neg Normal.* |
+| *H2: Minimal expression variance in normal tissues regardless of PNI status.* | *H5: Distinct bifurcated expression patterns in PNI-Pos Tumor vs PNI-Neg Normal.* |
 
 * **Clustering Insight:** Hierarchical clustering in **H2** confirms that PNI status does not disrupt the basal transcriptomic state of normal tissues. 
 * **Malignancy Signature:** **H5** demonstrates a clear molecular signature that separates aggressive PNI-positive tumors from healthy controls, highlighting the "eruption" of differentially expressed genes.
@@ -105,7 +105,7 @@ To isolate the core genetic drivers, I intersected multiple clinical contrasts a
 | **Core Biomarker Intersection** | **Expression Stability Profile** |
 | :---: | :---: |
 | ![Venn Diagram](Results/Plots/Venn_6_Comparisons_PDAC.png) | ![Scatter Plot](Results/Plots/Mean_vs_SD_Scatter_PDAC_100.png) |
-| *Venn diagram identifying 9,750 unique DEGs across all 6 clinical contrasts.* | *Mean vs. SD Scatter plot visualizing gene stability with GAM smoothing.* |
+| *Venn diagram identifying 9,750 unique DEGs across all 6 clinical contrasts.* | *Mean vs SD Scatter plot visualizing gene stability with GAM smoothing.* |
 
 * **Robust Intersection:** The 6-set Venn diagram allows for the identification of consistently dysregulated genes across all clinical scenarios.
 * **High-Confidence Biomarkers:** Key upregulated genes identified through this pipeline include **CEACAM5, S100P, CST2,** and **TMPRSS4**.
