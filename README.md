@@ -70,6 +70,21 @@ Below is the visual representation of the analytical steps performed in this pro
 
 
 ## 4. Key Findings
+
+### 4.1. Transcriptomic Stability vs. Eruption
+
+To illustrate the extreme variance in gene expression, this analysis compares highly stable transcriptomic profiles against those undergoing massive dysregulation ("eruption"):
+
+| **Condition: Stability** (Intra-tissue Comparison) | **Condition: Eruption** (Extreme Contrast) |
+| :---: | :---: |
+| ![Stability Plot](plots/Volcano_1_PDAC_pni_tumor.png) | ![Eruption Plot](plots/Volcano_5_PDAC_extreme_contrast.png) |
+| *Stability Example: The PNI effect within tumor tissues shows minimal differential expression.* | *Eruption Example: The Extreme Contrast reveals massive gene activation and suppression.* |
+
+* **Key Insight:** Pancreatic Duct Adenocarcinoma (PDAC) maintains high transcriptomic stability at the tissue level (Tumor-only or Normal-only). However, it undergoes a massive "expression eruption" when transitioning from a normal state to a malignant, nerve-involved (PNI-positive) state.
+* **Biological Significance:** This suggests that while Neural Invasion is a critical clinical marker, the most profound molecular shifts are driven by the synergy between malignancy and the perineural environment.
+
+
+
 ### 4.1. Transcriptomic Stability vs. Eruption
 * **PNI-Specific Effects:** Contrasts within the same tissue type (Tumor-only or Normal-only) showed high transcriptomic stability with no significant DEGs.
 * **Malignancy Drivers:** Direct comparisons between Tumor and Normal tissues revealed a massive "eruption" of differential expression.
