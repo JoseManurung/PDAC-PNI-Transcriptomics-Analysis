@@ -917,9 +917,12 @@ h_global <- pheatmap(
   silent = TRUE
 )
 
-# Q.2.6. Review Visualization Result and Automated Image Export
-# Prints generated plot and export to PNG with Publication-Ready Labels
-print(h_global)
+# Q.2.6. Review Visualizations in Console
+# Run this command to inspect heatmap global plot with a clean canvas
+grid.newpage(); grid.draw(h_global$gtable)
+
+# Q.2.7. Automated Image Export
+# Export to PNG with Publication-Ready Labels
 png("plots/H0_Global_ANOVA_Heatmap_PDAC_100.png", width=16, height=10, units="in", res=300)
 grid::grid.newpage()
 grid::grid.draw(h_global$gtable)
