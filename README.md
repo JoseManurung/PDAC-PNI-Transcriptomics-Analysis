@@ -27,7 +27,7 @@ The primary goal of this study is to identify Differentially Expressed Genes (DE
 ---
 
 ## 2. Project Overview
-Pancreatic Ductal Adenocarcinoma (PDAC) is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)**—a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
+Pancreatic Ductal Adenocarcinoma (PDAC) is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)** a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
 
 Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) [Chen et al. (2023); Sarantis et al. (2020); Sun et al. (2024)]. This study utilizes the **GSE102238 dataset** [Yang et al. (2020)] to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
 
