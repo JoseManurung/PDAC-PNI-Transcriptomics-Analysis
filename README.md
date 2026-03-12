@@ -50,19 +50,21 @@ The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combine
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 
-**GEO Dataset** &nbsp;&nbsp;&nbsp;&nbsp;│  
-&nbsp;&nbsp;&nbsp;&nbsp;▼  
-**Data Preprocessing** &nbsp;&nbsp;&nbsp;&nbsp;│  
-&nbsp;&nbsp;&nbsp;&nbsp;▼  
-**Normalization** &nbsp;&nbsp;&nbsp;&nbsp;│  
-&nbsp;&nbsp;&nbsp;&nbsp;▼  
-**Differential Expression (limma)** &nbsp;&nbsp;&nbsp;&nbsp;│  
-&nbsp;&nbsp;&nbsp;&nbsp;▼  
-**Annotation & Filtering** &nbsp;&nbsp;&nbsp;&nbsp;│  
-&nbsp;&nbsp;&nbsp;&nbsp;▼  
-**Visualization** &nbsp;&nbsp;&nbsp;&nbsp;│  
-&nbsp;&nbsp;&nbsp;&nbsp;▼  
-**Biological Interpretation**
+| Analysis Step |
+| :---: |
+| **GEO Dataset** |
+| ▼ |
+| **Data Preprocessing** |
+| ▼ |
+| **Normalization** |
+| ▼ |
+| **Differential Expression (limma)** |
+| ▼ |
+| **Annotation & Filtering** |
+| ▼ |
+| **Visualization** |
+| ▼ |
+| **Biological Interpretation** |
 
 ---
 
