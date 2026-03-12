@@ -36,7 +36,7 @@ The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combine
 ### 3.1. Analysis Pipeline
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
 2.  **Normalization:** Log2 transformation and Quantile Normalization to stabilize expression distributions.
-3.  **Differential Expression (DEA):** Modeled using the `limma` package across six distinct clinical contrasts.
+3.  **Differential Expression Analysis (DEA):** Modeled using the `limma` package across six distinct clinical contrasts.
 4.  **Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
 5.  **Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
     * **Boxplot & Density:** `ggplot()` with `stat_boxplot` and `geom_density` to verify normalization.
@@ -122,7 +122,7 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 
 ## 5. Conclusion
 
-This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, we have established several key conclusions:
+This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, i have established several key conclusions:
 
 * **Malignancy Overrides Localization:** The transcriptomic landscape is dominated by a robust malignant signal that remains consistent regardless of localized neural involvement. The primary oncogenic "engine" of PDAC is the main driver of the observed mRNA profiles.
 * **The "Eruption" Signature:** While PNI-only contrasts show high homeostatic stability, the transition from normal to malignant PNI-positive states triggers a massive molecular "eruption." This is evidenced by a core consensus signature of **4,857 shared DEGs**, including high-confidence biomarkers such as **CEACAM5, S100P, CST2,** and **TMPRSS4**.
