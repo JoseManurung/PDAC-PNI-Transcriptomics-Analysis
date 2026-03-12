@@ -115,10 +115,10 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 | **Biological Processes (GO)** | **Signaling Pathways (KEGG)** |
 | :---: | :---: |
 | ![Dot Plot](Results/Plots/GO_Enrichment_Dotplot_PDAC.png) | ![Bar Plot](Results/Plots/KEGG_Enrichment_Barplot_PDAC.png) |
-| *Dot plot highlighting Axon Guidance and Cell Adhesion.* | *Bar plot showcasing Immune and PI3K-Akt signaling.* |
+| *Dot plot highlighting Leukocyte Adhesion and T-cell Activation.* | *Bar plot showcasing IgSF CAM signaling and Axon Guidance.* |
 
-* **Neural Link:** Significant enrichment in **Axon Guidance** pathways provides a molecular explanation for the Perineural Invasion (PNI) mechanism.
-* **Tumor Microenvironment:** Enrichment in immune-related pathways suggests that PNI-positive tumors modulate their environment to facilitate dissemination.
+* **Immune Response & Adhesion:** Significant enrichment in **Leukocyte cell-cell adhesion** and **T-cell activation** suggests a strong immune-modulatory component in the PDAC microenvironment.
+* **Neural & Signaling Links:** KEGG analysis identifies **Axon Guidance** and **IgSF CAM signaling** as key pathways, providing a molecular basis for how tumor cells interact with neural structures during PNI.
 
 ## 5. Conclusion
 This research confirms that while the malignant phenotype is the primary driver of variance in PDAC, pathways associated with neural signaling (Axon Guidance) are uniquely positioned as potential master regulators of neural infiltration. These findings offer high-value candidates for biomarker discovery and therapeutic targeting.
