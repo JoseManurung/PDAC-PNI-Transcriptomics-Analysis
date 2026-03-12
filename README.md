@@ -29,13 +29,30 @@ The primary goal of this study is to identify Differentially Expressed Genes (DE
 ## 2. Project Overview
 Pancreatic Ductal Adenocarcinoma (PDAC) progression is heavily influenced by **Perineural Invasion (PNI)**. This study utilizes the **GSE102238** dataset (100 samples) to map the molecular crosstalk between malignant cells and the peripheral nervous system.
 
-## 3. Methodology
-The analysis was conducted using **R (v4.5.2)** with the following pipeline:
-* **Data Acquisition:** Retrieval of raw data via `GEOquery`.
-* **Normalization:** Log2 transformation and Quantile Normalization to stabilize expression distributions.
-* **Differential Expression (DEA):** Modeled using the `limma` package across six distinct clinical contrasts.
-* **Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt`.
-* **Functional Enrichment:** Pathway analysis using Gene Ontology (GO) and KEGG.
+## 3. Methodology & Workflow
+
+The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
+
+### 3.1. Analysis Pipeline
+1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
+2.  **Normalization:** Log2 transformation and Quantile Normalization to stabilize expression distributions.
+3.  **Differential Expression (DEA):** Modeled using the `limma` package across six distinct clinical contrasts.
+4.  **Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt`.
+5.  **Visualization:** Generation of Boxplot, Density Plot, UMAP Plot, Volcano Plots, Heatmaps, Scatter Plot, and Venn Diagram using `ggplot2` and `pheatmap` to assess data distribution and DEG significance.
+6.  **Functional Enrichment:** Pathway analysis using Gene Ontology (GO) and KEGG.
+
+### 3.2. Pipeline Workflow
+Below is the visual representation of the analytical steps performed in this project:
+
+```mermaid
+graph TD
+    A[GEO Dataset] --> B(Data Preprocessing)
+    B --> C(Normalization)
+    C --> D(Differential Expression - limma)
+    D --> E(Annotation)
+    E --> F(Visualization)
+    F --> G[Biological Interpretation]
+
 
 ## 4. Key Findings
 ### 4.1. Transcriptomic Stability vs. Eruption
