@@ -80,19 +80,45 @@ To illustrate the extreme variance in gene expression, this analysis compares hi
 | ![Stability Plot](Results/Plots/Volcano_2_PDAC_pni_normal.png) | ![Eruption Plot](Results/Plots/Volcano_5_PDAC_extreme_contrast.png) |
 | *Stability Example: The PNI effect within normal tissues shows minimal differential expression.* | *Eruption Example: The Extreme Contrast reveals massive gene activation and suppression.* |
 
-* **Key Insight:** Pancreatic Duct Adenocarcinoma (PDAC) maintains high transcriptomic stability at the tissue level, particularly within normal cohorts. However, it undergoes a massive "expression eruption" when transitioning from a basal normal state to a malignant, nerve-involved (PNI-positive) state.
+* **Key Insight:** PDAC maintains high transcriptomic stability at the tissue level, particularly within normal cohorts. However, it undergoes a massive "expression eruption" when transitioning from a basal normal state to a malignant, nerve-involved (PNI-positive) state.
 * **Biological Significance:** This suggests that while Neural Invasion is a critical clinical marker, the most profound molecular shifts are driven by the synergy between malignancy and the perineural environment.
 
-### 4.1. Transcriptomic Stability vs. Eruption
-* **PNI-Specific Effects:** Contrasts within the same tissue type (Tumor-only or Normal-only) showed high transcriptomic stability with no significant DEGs.
-* **Malignancy Drivers:** Direct comparisons between Tumor and Normal tissues revealed a massive "eruption" of differential expression.
-* **Top Biomarkers:** Key upregulated genes identified include **CEACAM5, S100P, CST2,** and **TMPRSS4**.
+### 4.2. Global Expression Profiling (Heatmaps)
 
-### 4.2. Functional Pathways
-Enrichment analysis highlighted critical pathways involved in:
-* **Axon Guidance:** Providing a direct transcriptomic link to the PNI phenotype.
-* **IgSF CAM Signaling:** Facilitating cell-adhesion and tumor dissemination.
-* **Immune Modulation:** Significant enrichment in leukocyte dynamics and T-cell activation.
+The heatmaps illustrate the contrast between homeostatic stability and significant clinical divergence across the 100-sample cohort:
+
+| **Condition: Stability** (Normal Tissue) | **Condition: Eruption** (Extreme Contrast) |
+| :---: | :---: |
+| ![Heatmap Normal](Results/Plots/H2_PDAC_pni_normal.png) | ![Heatmap Extreme](Results/Plots/H5_PDAC_extreme.png) |
+| *H2: Minimal expression variance in normal tissues regardless of PNI status.* | *H5: Distinct bifurcated expression patterns in PNI-Pos Tumor vs. PNI-Neg Normal.* |
+
+* **Clustering Insight:** Hierarchical clustering in **H2** confirms that PNI status does not disrupt the basal transcriptomic state of normal tissues. 
+* **Malignancy Signature:** **H5** demonstrates a clear molecular signature that separates aggressive PNI-positive tumors from healthy controls, highlighting the "eruption" of differentially expressed genes.
+
+### 4.3. Biomarker Identification & Stability Analysis
+
+To isolate the core genetic drivers, i intersected multiple clinical contrasts and verified expression stability:
+
+| **Core Biomarker Intersection** | **Expression Stability Profile** |
+| :---: | :---: |
+| ![Venn Diagram](Results/Plots/Venn_6_Comparisons_PDAC.png) | ![Scatter Plot](Results/Plots/Mean_vs_SD_Scatter_PDAC_100.png) |
+| *Venn diagram identifying 9,750 unique DEGs across all 6 clinical contrasts.* | *Mean vs. SD Scatter plot visualizing gene stability with GAM smoothing.* |
+
+* **Robust Intersection:** The 6-set Venn diagram allows for the identification of consistently dysregulated genes across all clinical scenarios.
+* **High-Confidence Biomarkers:** Key upregulated genes identified through this pipeline include **CEACAM5, S100P, CST2,** and **TMPRSS4**.
+* **Stability Verification:** The scatter plot confirms that while most genes remain stable (low SD), a subset of high-variance genes drives the clinical differences observed in PDAC.
+
+### 4.4. Functional Enrichment Analysis (GO & KEGG)
+
+The biological roles of the core biomarkers were analyzed to link gene expression to clinical phenotypes:
+
+| **Biological Processes (GO)** | **Signaling Pathways (KEGG)** |
+| :---: | :---: |
+| ![Dot Plot](Results/Plots/GO_Dotplot.png) | ![Bar Plot](Results/Plots/KEGG_Barplot.png) |
+| *Dot plot highlighting Axon Guidance and Cell Adhesion.* | *Bar plot showcasing Immune and PI3K-Akt signaling.* |
+
+* **Neural Link:** Significant enrichment in **Axon Guidance** pathways provides a molecular explanation for the Perineural Invasion (PNI) mechanism.
+* **Tumor Microenvironment:** Enrichment in immune-related pathways suggests that PNI-positive tumors modulate their environment to facilitate dissemination.
 
 ## 5. Conclusion
 This research confirms that while the malignant phenotype is the primary driver of variance in PDAC, pathways associated with neural signaling (Axon Guidance) are uniquely positioned as potential master regulators of neural infiltration. These findings offer high-value candidates for biomarker discovery and therapeutic targeting.
