@@ -121,7 +121,16 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 * **Neural & Signaling Links:** KEGG analysis identifies **Axon Guidance** and **IgSF CAM signaling** as key pathways, providing a molecular basis for how tumor cells interact with neural structures during PNI.
 
 ## 5. Conclusion
-This research confirms that while the malignant phenotype is the primary driver of variance in PDAC, pathways associated with neural signaling (Axon Guidance) are uniquely positioned as potential master regulators of neural infiltration. These findings offer high-value candidates for biomarker discovery and therapeutic targeting.
+
+This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, we have established several key conclusions:
+
+* **Malignancy Overrides Localization:** The transcriptomic landscape is dominated by a robust malignant signal that remains consistent regardless of localized neural involvement. The primary oncogenic "engine" of PDAC is the main driver of the observed mRNA profiles.
+* **The "Eruption" Signature:** While PNI-only contrasts show high homeostatic stability, the transition from normal to malignant PNI-positive states triggers a massive molecular "eruption." This is evidenced by a core consensus signature of **4,857 shared DEGs**, including high-confidence biomarkers such as **CEACAM5, S100P, CST2,** and **TMPRSS4**.
+* **Molecular Hijacking:** Functional enrichment confirms that tumor cells do not move randomly; they actively exploit **Axon Guidance** and **IgSF CAM signaling** to infiltrate the peripheral nervous system. 
+* **Immune-Adhesion Crosstalk:** The convergence of **Leukocyte cell-cell adhesion** and **T-cell activation** pathways suggests that PNI is an immune-active process, characterized by complex bidirectional crosstalk between malignant cells and the inflammatory tumor microenvironment (TME).
+
+### Summary Impact
+This research establishes a computational foundation for discovering novel diagnostic markers and therapeutic targets. By identifying the molecular pillars driving both PDAC progression and neural recruitment, these findings offer a roadmap for future studies aimed at disrupting the pathways that drive clinical recurrence and patient morbidity.
 
 ## 6. References
 * **Chen, Z., et al. (2023).** Cancers, 15(5), 1360.
