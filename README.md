@@ -146,6 +146,6 @@ This research establishes a computational foundation for discovering novel diagn
 * **`/Results`**: 
     * `Data_Tables/`: Statistical output of DEGs (CSV/Excel tables).
     * `Plots/`: Visualizations (Boxplot, density plot, UMAP plot, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot).
-* **`/Script`**: R scripts used for normalization, DEA, and visualization.
+* **`/Script`**: Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation.
 ---
 © 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
