@@ -114,7 +114,7 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 
 | **Biological Processes (GO)** | **Signaling Pathways (KEGG)** |
 | :---: | :---: |
-| ![Dot Plot](Results/Plots/GO_Dotplot.png) | ![Bar Plot](Results/Plots/KEGG_Barplot.png) |
+| ![Dot Plot](Results/Plots/GO_Enrichment_Dotplot_PDAC.png) | ![Bar Plot](Results/Plots/KEGG_Enrichment_Barplot_PDAC.png) |
 | *Dot plot highlighting Axon Guidance and Cell Adhesion.* | *Bar plot showcasing Immune and PI3K-Akt signaling.* |
 
 * **Neural Link:** Significant enrichment in **Axon Guidance** pathways provides a molecular explanation for the Perineural Invasion (PNI) mechanism.
