@@ -1359,7 +1359,35 @@ ggsave("plots/Venn_6_Comparisons_PDAC.png",
        dpi = 300,
        bg = "white",           
        limitsize = FALSE)
+    
+# ---------------------------------------------------
+# T.3. EXTRACTION DATA OF SPECIFIC VENN INTERSECTIONS
+# ---------------------------------------------------
+# T.3.1. Extract Raw Region Data from Venn Object
+# Identifies members of every possible intersection and calculates specific gene counts
+venn_data_raw <- process_region_data(Venn(venn_list))
 
+# T.3.2. Transform to Long Format with Explicit Gene Counts
+# Converts nested gene lists into a tidy long format while retaining quantitative data
+venn_long <- venn_data_raw %>%
+  dplyr::select(Clinicopathological_Group = name, Gene_Count = count, Symbol = item) %>%
+  tidyr::unnest(Symbol)
+
+# T.3.3. Prepare Annotation Reference from Master Dataset
+# Extracts unique gene symbols and functional descriptions for clean 1-to-1 mapping
+gene_info <- topTable_Master_Clean %>%
+  dplyr::select(Symbol, Gene_Description) %>%
+  distinct(Symbol, .keep_all = TRUE)
+
+# T.3.4. Integrate Venn Intersections with Functional Annotations
+# Performs a left join to attach biological descriptions to each identified Venn member
+venn_annotated <- venn_long %>%
+  left_join(gene_info, by = "Symbol")
+
+# T.3.5. Automated Export of Annotated Intersection Report
+# Saves the finalized long-format table to a CSV file for professional validation
+write.csv(venn_annotated, "results/Venn_Detailed_Intersections_Report.csv", row.names = FALSE)
+                         
 # ================================================================
 # PART U. SYSTEMIC BIOLOGICAL INTERPRETATION: GO & KEGG ENRICHMENT
 # ================================================================
