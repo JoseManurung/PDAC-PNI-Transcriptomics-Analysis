@@ -4,7 +4,7 @@
 **Author:** Yosia Jose Rasdiva Manurung  
 **Affiliation:** Diponegoro University
 
-[![Language](https://img.shields.io/badge/Language-100%25%20R-blueviolet.svg)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
+[![Language](https://img.shields.io/badge/Language-100%25%20R-violet.svg)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
 [![R Version](https://img.shields.io/badge/R-v4.5.2-blue.svg)](https://www.r-project.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21870889-green)](https://doi.org/10.5281/zenodo.21870889)
