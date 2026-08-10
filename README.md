@@ -1,14 +1,15 @@
-## 📜 Copyright & Licensing
-> [!CAUTION]
-> **Academic Integrity & Copyright Notice**.
-> 
-> This project, including all R scripts, datasets, and visualizations, is the academic work of **Yosia Jose Rasdiva Manurung**. 
-> Unauthorized use, reproduction, or redistribution of this content for commercial purposes or academic submission by others is **strictly prohibited**. For permissions or collaboration, please contact the author.  
+<div align="center">
 
 # Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study
 **Author:** Yosia Jose Rasdiva Manurung  
-**Affiliation:** Diponegoro University  
+**Affiliation:** Diponegoro University
+
+[![R Version](https://img.shields.io/badge/R-v4.5.2-blue.svg)](https://www.r-project.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/1176184593.svg)](https://doi.org/10.5281/zenodo.21870889)
+[![Language](https://img.shields.io/badge/Language-100%25%20R-blueviolet.svg)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
+
+</div>
 
 ---
 
@@ -18,7 +19,7 @@ PDAC-PNI-Transcriptomics-Analysis/
 <br>├── 📂 Dataset/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Curated expression matrix and metadata from GSE102238
 <br>├── 📂 Results/
 <br>│&nbsp;&nbsp;&nbsp;&nbsp;├── Data_Tables/ &nbsp;&nbsp;# Statistical output of DEGs (CSV/Excel tables)
-<br>│&nbsp;&nbsp;&nbsp;&nbsp;└── Plots/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Visualizations (Boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, bar plot)
+<br>│&nbsp;&nbsp;&nbsp;&nbsp;└── Plots/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Visualizations (boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
 <br>└── 📂 Script/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
 
 ---
