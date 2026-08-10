@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you use this analysis pipeline in your research, please cite it as below."
-type: software
+message: "If you use this analysis pipeline or dataset in your research, please cite it as below."
+type: dataset
 authors:
   - family-names: "Manurung"
     given-names: "Yosia Jose Rasdiva"
-    orcid: "https://orcid.org/my-orcid?orcid=0009-0001-8237-959X"
+    orcid: "https://orcid.org/0009-0001-8237-959X"
 title: "Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study"
 version: 1.0.0
 date-released: 2026-08-10
@@ -12,4 +12,4 @@ url: "https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis"
 identifiers:
   - description: "This is the collection of archived snapshots of the repository"
     type: doi
-    value: "10.5281/zenodo.21870890"
+    value: "10.5281/zenodo.21870889"
