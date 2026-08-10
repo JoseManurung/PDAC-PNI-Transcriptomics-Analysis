@@ -26,10 +26,15 @@ PDAC-PNI-Transcriptomics-Analysis/
 
 ---
 
-## 1. Research Objectives & Comparison Groups
+## 1. Project Overview
+Pancreatic Ductal Adenocarcinoma (PDAC) is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)** a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
+
+Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) [Chen et al. (2023); Sarantis et al. (2020); Sun et al. (2024)]. This study utilizes the **GSE102238 dataset** [Yang et al. (2020)] to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
+
+---
+
+## 2. Research Objectives & Comparison Groups
 The primary goal of this study is to identify Differentially Expressed Genes (DEGs) across **six PNI-related clinical contrasts**. This systematic approach allows me to isolate the specific transcriptomic signatures driven by neural invasion versus those driven by general tumorigenesis.
-
-
 
 ### Contrasts Explored:
 1.  **PNI Effect (Tumor):** PNI-positive Tumor vs. PNI-negative Tumor
@@ -41,14 +46,7 @@ The primary goal of this study is to identify Differentially Expressed Genes (DE
 
 ---
 
-## 2. Project Overview
-Pancreatic Ductal Adenocarcinoma (PDAC) is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)** a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
-
-Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) [Chen et al. (2023); Sarantis et al. (2020); Sun et al. (2024)]. This study utilizes the **GSE102238 dataset** [Yang et al. (2020)] to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
-
-
 ## 3. Methodology & Workflow
-
 The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
 
 ### 3.1. Analysis Pipeline
@@ -86,11 +84,9 @@ Below is the visual representation of the analytical steps performed in this pro
 
 ---
 
-
 ## 4. Key Findings
 
 ### 4.1. Transcriptomic Stability vs. Eruption
-
 To illustrate the extreme variance in gene expression, this analysis compares highly stable transcriptomic profiles against those undergoing massive dysregulation ("eruption"):
 
 | **Condition: Stability** (Normal Tissue) | **Condition: Eruption** (Extreme Contrast) |
@@ -102,7 +98,6 @@ To illustrate the extreme variance in gene expression, this analysis compares hi
 * **Biological Significance:** This suggests that while Neural Invasion is a critical clinical marker, the most profound molecular shifts are driven by the synergy between malignancy and the perineural environment.
 
 ### 4.2. Global Expression Profiling (Heatmaps)
-
 The heatmaps illustrate the contrast between homeostatic stability and significant clinical divergence across the 100-sample cohort:
 
 | **Condition: Stability** (Normal Tissue) | **Condition: Eruption** (Extreme Contrast) |
@@ -114,7 +109,6 @@ The heatmaps illustrate the contrast between homeostatic stability and significa
 * **Malignancy Signature:** **H5** demonstrates a clear molecular signature that separates aggressive PNI-positive tumors from healthy controls, highlighting the "eruption" of differentially expressed genes.
 
 ### 4.3. Biomarker Identification & Stability Analysis
-
 To isolate the core genetic drivers, I intersected multiple clinical contrasts and verified expression stability:
 
 | **Core Biomarker Intersection** | **Expression Stability Profile** |
@@ -127,7 +121,6 @@ To isolate the core genetic drivers, I intersected multiple clinical contrasts a
 * **Stability Verification:** The scatter plot confirms that while most genes remain stable (low SD), a subset of high-variance genes drives the clinical differences observed in PDAC.
 
 ### 4.4. Functional Enrichment Analysis (GO & KEGG)
-
 The biological roles of the core biomarkers were analyzed to link gene expression to clinical phenotypes:
 
 | **Biological Processes (GO)** | **Signaling Pathways (KEGG)** |
@@ -138,8 +131,9 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 * **Immune Response & Adhesion:** Significant enrichment in **Leukocyte cell-cell adhesion** and **T-cell activation** suggests a strong immune-modulatory component in the PDAC microenvironment.
 * **Neural & Signaling Links:** KEGG analysis identifies **Axon Guidance** and **IgSF CAM signaling** as key pathways, providing a molecular basis for how tumor cells interact with neural structures during PNI.
 
-## 5. Conclusion
+---
 
+## 5. Conclusion
 This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, I have established several key conclusions:
 
 * **Malignancy Overrides Localization:** The transcriptomic landscape is dominated by a robust malignant signal that remains consistent regardless of localized neural involvement. The primary oncogenic "engine" of PDAC is the main driver of the observed mRNA profiles.
@@ -150,11 +144,15 @@ This study provides a high-resolution transcriptomic map of **Perineural Invasio
 ### Summary Impact
 This research establishes a computational foundation for discovering novel diagnostic markers and therapeutic targets. By identifying the molecular pillars driving both PDAC progression and neural recruitment, these findings offer a roadmap for future studies aimed at disrupting the pathways that drive clinical recurrence and patient morbidity.
 
+---
+
 ## 6. References
 * **Chen, Z., et al. (2023).** Cancers, 15(5), 1360.
 * **Sarantis, P., et al. (2020).** World Journal of Gastrointestinal Oncology, 12(2), 173.
 * **Sun, Y., et al. (2024).** Frontiers in Oncology, 14, 1421067.
 * **Yang, M. W., et al. (2020).** Cancer Research, 80(10), 1991.
+
+---
 
 ## Citation
 If you use this repository, datasets, or analytical pipelines in your academic research, please cite it using the metadata provided below:
@@ -172,5 +170,7 @@ If you use this repository, datasets, or analytical pipelines in your academic r
   doi = {10.5281/zenodo.21870889}
 }
 ```
+
 ---
+
 © 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
