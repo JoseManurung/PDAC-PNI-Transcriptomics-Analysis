@@ -157,7 +157,7 @@ This research establishes a computational foundation for discovering novel diagn
 ## Citation
 If you use this repository, datasets, or analytical pipelines in your academic research, please cite it using the metadata provided below:
 
-> Manurung, Y. J. R. (2026). *Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study* (Version 1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21870889
+> Manurung, Y. J. R. (2026). *Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study* (Version 1.0.1) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21870889
 
 ```bibtex
 @misc{Manurung_2026_PDAC_PNI,
@@ -165,7 +165,7 @@ If you use this repository, datasets, or analytical pipelines in your academic r
   month = {8},
   title = {{Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study}},
   url = {[https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)},
-  version = {1.0.0},
+  version = {1.0.1},
   year = {2026},
   doi = {10.5281/zenodo.21870889}
 }
