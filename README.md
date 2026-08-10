@@ -15,8 +15,6 @@
 
 ## Repository Structure
 
-## Repository Structure
-
 ```text
 PDAC-PNI-Transcriptomics-Analysis/
 ├── Dataset/         # Curated expression matrix and metadata from GSE102238
