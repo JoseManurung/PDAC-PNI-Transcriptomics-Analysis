@@ -8,6 +8,7 @@
 # Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study
 **Author:** Yosia Jose Rasdiva Manurung  
 **Affiliation:** Diponegoro University  
+[![DOI](https://zenodo.org/badge/1176184593.svg)](https://doi.org/10.5281/zenodo.21870889)
 
 ---
 
