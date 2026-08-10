@@ -13,14 +13,14 @@
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 PDAC-PNI-Transcriptomics-Analysis/
-<br>├── 📂 Dataset/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Curated expression matrix and metadata from GSE102238
-<br>├── 📂 Results/
+<br>├── Dataset/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Curated expression matrix and metadata from GSE102238
+<br>├── Results/
 <br>│&nbsp;&nbsp;&nbsp;&nbsp;├── Data_Tables/ &nbsp;&nbsp;# Statistical output of DEGs (CSV/Excel tables)
 <br>│&nbsp;&nbsp;&nbsp;&nbsp;└── Plots/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Visualizations (boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
-<br>└── 📂 Script/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
+<br>└── Script/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
 
 ---
 
@@ -153,6 +153,22 @@ This research establishes a computational foundation for discovering novel diagn
 * **Sarantis, P., et al. (2020).** World Journal of Gastrointestinal Oncology, 12(2), 173.
 * **Sun, Y., et al. (2024).** Frontiers in Oncology, 14, 1421067.
 * **Yang, M. W., et al. (2020).** Cancer Research, 80(10), 1991.
+
+## Citation
+If you use this repository, datasets, or analytical pipelines in your academic research, please cite it using the metadata provided below:
+
+> Manurung, Y. J. R. (2026). *Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study* (Version 1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21870889
+
+```bibtex
+@misc{Manurung_2026_PDAC_PNI,
+  author = {Manurung, Yosia Jose Rasdiva},
+  month = {8},
+  title = {{Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study}},
+  url = {[https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)},
+  version = {1.0.0},
+  year = {2026},
+  doi = {10.5281/zenodo.21870889}
+}
 
 ---
 © 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
