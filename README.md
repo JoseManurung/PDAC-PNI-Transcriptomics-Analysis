@@ -11,6 +11,23 @@
 
 ---
 
+## 📂 Repository Structure
+
+```text
+PDAC-PNI-Transcriptomics-Analysis/
+│
+├── 📂 Dataset/
+│   └── (Curated expression matrix and metadata from GSE102238)
+│
+├── 📂 Results/
+│   ├── Data_Tables/   # Statistical output of DEGs (CSV/Excel tables)
+│   └── Plots/         # Visualizations (boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, bar plot)
+│
+└── 📂 Script/
+    └── (Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation)
+
+---
+
 ## 1. Research Objectives & Comparison Groups
 The primary goal of this study is to identify Differentially Expressed Genes (DEGs) across **six PNI-related clinical contrasts**. This systematic approach allows me to isolate the specific transcriptomic signatures driven by neural invasion versus those driven by general tumorigenesis.
 
@@ -141,11 +158,5 @@ This research establishes a computational foundation for discovering novel diagn
 * **Sun, Y., et al. (2024).** Frontiers in Oncology, 14, 1421067.
 * **Yang, M. W., et al. (2020).** Cancer Research, 80(10), 1991.
 
-## 📂 Repository Structure
-* **`/Dataset`**: Curated expression matrix and metadata from GSE102238.
-* **`/Results`**: 
-    * `Data_Tables/`: Statistical output of DEGs (CSV/Excel tables).
-    * `Plots/`: Visualizations (Boxplot, density plot, UMAP plot, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot).
-* **`/Script`**: Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation.
 ---
 © 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
