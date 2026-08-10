@@ -15,13 +15,19 @@
 
 ## Repository Structure
 
+## Repository Structure
+
 ```text
 PDAC-PNI-Transcriptomics-Analysis/
 ├── Dataset/         # Curated expression matrix and metadata from GSE102238
 ├── Results/
 │   ├── Data_Tables/ # Statistical output of DEGs (CSV/Excel tables)
 │   └── Plots/       # Visualizations (boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
-└── Script/          # Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
+├── Script/          # Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
+├── .gitignore       # Git exclusion rules for temporary/system files
+├── CITATION.cff     # Academic citation metadata for the repository and DOI
+├── LICENSE          # MIT open-source licensing agreement
+└── README.md        # Comprehensive project documentation and execution guide
 ```
 
 ---
