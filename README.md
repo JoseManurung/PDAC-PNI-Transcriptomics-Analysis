@@ -13,7 +13,6 @@
 
 ## 📂 Repository Structure
 
-```text
 PDAC-PNI-Transcriptomics-Analysis/
 │
 ├── 📂 Dataset/
