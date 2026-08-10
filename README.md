@@ -15,12 +15,14 @@
 
 ## Repository Structure
 
+```text
 PDAC-PNI-Transcriptomics-Analysis/
-<br>├── Dataset/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Curated expression matrix and metadata from GSE102238
-<br>├── Results/
-<br>│&nbsp;&nbsp;&nbsp;&nbsp;├── Data_Tables/ &nbsp;&nbsp;# Statistical output of DEGs (CSV/Excel tables)
-<br>│&nbsp;&nbsp;&nbsp;&nbsp;└── Plots/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Visualizations (boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
-<br>└── Script/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
+├── Dataset/     # Curated expression matrix and metadata from GSE102238
+├── Results/
+│   ├── Data_Tables/  # Statistical output of DEGs (CSV/Excel tables)
+│   └── Plots/        # Visualizations (boxplot, density plot, UMAP, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
+└── Script/      # Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
+```
 
 ---
 
