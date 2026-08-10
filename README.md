@@ -169,3 +169,6 @@ If you use this repository, datasets, or analytical pipelines in your academic r
   year = {2026},
   doi = {10.5281/zenodo.21870889}
 }
+```
+---
+© 2026 Yosia Jose Rasdiva Manurung. All Rights Reserved.
