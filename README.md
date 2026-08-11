@@ -82,19 +82,18 @@ graph TD
     %% Top Row: Steps 1 to 4 (Flowing Left to Right)
     subgraph Row1 [ ]
         direction LR
-        S1["1. Data Acquisition"] --> S2["2. Data Preprocessing"]
-        S2 --> S3["3. Data Normalization"]
-        S3 --> S4["4. Differential Expression Analysis (DEA)"]
+        S1["1. Data Acquisition"] --> S2["2. Data Normalization"]
+        S2 --> S3["3. Differential Expression Analysis (DEA)"]
     end
 
-    %% Vertical connector from Step 4 down to Step 5
-    S4 --> S5
+    %% Vertical connector from Step 3 down to Step 4
+    S3 --> S4
 
-    %% Bottom Row: Steps 5 to 7 (Flowing Right to Left)
+    %% Bottom Row: Steps 4 to 6 (Flowing Right to Left)
     subgraph Row2 [ ]
         direction LR
-        S5["5. Data Annotation & Filtering"] --> S6["6. Data Visualization"]
-        S6 --> S7["7. Biological Interpretation"]
+        S4["4. Data Annotation"] --> S5["5. Data Visualization"]
+        S5 --> S6["6. Biological Interpretation"]
     end
 
     %% Creative Colorful Styling for Each Step
@@ -104,7 +103,6 @@ graph TD
     style S4 fill:#9c27b0,color:#fff,stroke:#4a148c,stroke-width:2px
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
-    style S7 fill:#4caf50,color:#fff,stroke:#1b5e20,stroke-width:2px
 
     %% Remove subgraph borders and background for a clean layout
     style Row1 fill:transparent,stroke:none
