@@ -77,36 +77,23 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
-
-### 3.2. Pipeline Workflow
-
-Below is the visual representation of the analytical steps performed in this project:
-
 ```mermaid
 graph LR
-    %% Top Row: Steps 1 to 4 (Left to Right)
-    S1[1. GEO Dataset] --> S2[2. Data Preprocessing]
-    S2 --> S3[3. Normalization]
-    S3 --> S4[4. Differential Expression]
+    S1[1. GEO<br/>Dataset] --> S2[2. Data<br/>Preprocessing]
+    S2 --> S3[3.<br/>Normalization]
+    S3 --> S4[4. Differential<br/>Expression]
+    S4 --> S5[5. Annotation<br/>& Filtering]
+    S5 --> S6[6.<br/>Visualization]
+    S6 --> S7[7. Biological<br/>Interpretation]
 
-    %% Vertical Connector to Bottom Row
-    S4 --> S5
-
-    %% Bottom Row: Steps 5 to 7 (Right to Left flow)
-    subgraph Pipeline Continuation
-        direction RL
-        S5[5. Annotation & Filtering] --> S6[6. Visualization]
-        S6 --> S7[7. Biological Interpretation]
-    end
-
-    %% Professional Color Styling
-    style S1 fill:#1a1a2e,color:#fff,stroke:#4ecca3,stroke-width:2px
-    style S2 fill:#16213e,color:#fff,stroke:#4ecca3,stroke-width:2px
-    style S3 fill:#0f3460,color:#fff,stroke:#4ecca3,stroke-width:2px
-    style S4 fill:#533483,color:#fff,stroke:#e94560,stroke-width:2px
-    style S5 fill:#533483,color:#fff,stroke:#e94560,stroke-width:2px
-    style S6 fill:#0f3460,color:#fff,stroke:#4ecca3,stroke-width:2px
-    style S7 fill:#1a1a2e,color:#fff,stroke:#4ecca3,stroke-width:2px
+    %% Creative Colorful Styling for Each Step
+    style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
+    style S2 fill:#00adb5,color:#fff,stroke:#393e46,stroke-width:2px
+    style S3 fill:#ff5722,color:#fff,stroke:#b23b00,stroke-width:2px
+    style S4 fill:#9c27b0,color:#fff,stroke:#4a148c,stroke-width:2px
+    style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
+    style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
+    style S7 fill:#4caf50,color:#fff,stroke:#1b5e20,stroke-width:2px
 ```
 
 ---
