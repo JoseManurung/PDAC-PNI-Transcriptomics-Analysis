@@ -11,8 +11,9 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21874318-brightgreen?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.21870889)
 [![Last Commit](https://img.shields.io/github/last-commit/JoseManurung/PDAC-PNI-Transcriptomics-Analysis?logo=github&color=purple)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/commits/main)
 
-[![Timeline](https://img.shields.io/badge/Duration-22%20Feb%20--%2008%20Mar%202026-informational?style=flat&logo=clock&logoColor=white)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
-[![Last Update](https://img.shields.io/badge/Last%20Update-15%20Mar%202026-orange?style=flat)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
+<!-- Badge Section -->
+[![Duration](https://img.shields.io/badge/Duration-22%20Feb%20--%2008%20Mar%202026-blue?style=flat&logo=calendar&logoColor=white)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
+[![Last Update](https://img.shields.io/badge/Last%20Update-15%20Mar%202026-orange?style=flat&logo=clockify&logoColor=white)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
 
 </div>
 
