@@ -33,7 +33,7 @@ PDAC-PNI-Transcriptomics-Analysis/
 ## 1. Project Overview
 Pancreatic Ductal Adenocarcinoma (PDAC) is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)** a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
 
-Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) [Chen et al. (2023); Sarantis et al. (2020); Sun et al. (2024)]. This study utilizes the **GSE102238 dataset** [Yang et al. (2020)] to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
+Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) ([Chen et al. (2023)](https://doi.org/10.3390/cancers15051360)); Sarantis et al. (2020); Sun et al. (2024). This study utilizes the **GSE102238 dataset** [Yang et al. (2020)] to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
 
 ---
 
@@ -151,7 +151,7 @@ This research establishes a computational foundation for discovering novel diagn
 ---
 
 ## 6. References
-* **Chen, Z., et al. (2023).** Cancers, 15(5), 1360.
+> * **Chen, Z., Fang, Y., & Jiang, W. (2023). Important Cells and Factors from Tumor Microenvironment Participated in Perineural Invasion. Cancers, 15(5), 1360. https://doi.org/10.3390/cancers15051360.
 * **Sarantis, P., et al. (2020).** World Journal of Gastrointestinal Oncology, 12(2), 173.
 * **Sun, Y., et al. (2024).** Frontiers in Oncology, 14, 1421067.
 * **Yang, M. W., et al. (2020).** Cancer Research, 80(10), 1991.
