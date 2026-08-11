@@ -63,17 +63,17 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 
 ### 3.1. Analysis Pipeline
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
-2.  **Normalization:** Log2 transformation and Quantile Normalization to stabilize expression distributions.
+2.  **Data Normalization:** Log2 transformation and Quantile Normalization to stabilize expression distributions.
 3.  **Differential Expression Analysis (DEA):** Modeled using the `limma` package across six distinct clinical contrasts.
-4.  **Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
-5.  **Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
+4.  **Data Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
+5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
     * **Boxplot & Density:** `ggplot()` with `stat_boxplot` and `geom_density` to verify normalization.
     * **UMAP:** `umap()` algorithm followed by `geom_point()` to visualize 2D sample clustering.
     * **Volcano Plot:** Custom function `make_volcano()` mapping log2FC vs. -log10 Adjusted P-value.
     * **Heatmap:** `pheatmap()` using Global ANOVA and Ward.D2 clustering for top 50 DEGs.
     * **Scatter Plot:** `ggplot()` with `geom_smooth(method = "gam")` to profile gene expression stability (Mean vs. SD) across clinical cohorts.
     * **Venn Diagram:** `ggVennDiagram()` with a 6-set elliptical layout (`shape_id = "601"`) to identify core biomarkers across all clinical contrasts.
-6.  **Functional Enrichment:** Pathway analysis using Gene Ontology (GO) and KEGG to interpret biological significance.
+6.  **Biological Interpretation:** Pathway analysis using Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) to interpret biological significance.
 
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
@@ -83,8 +83,8 @@ graph TD
     subgraph Row1 [ ]
         direction LR
         S1["1. GEO Dataset"] --> S2["2. Data Preprocessing"]
-        S2 --> S3["3. Normalization"]
-        S3 --> S4["4. Differential Expression"]
+        S2 --> S3["3. Data Normalization"]
+        S3 --> S4["4. Differential Expression Analysis (DEA)"]
     end
 
     %% Vertical connector from Step 4 down to Step 5
@@ -93,7 +93,7 @@ graph TD
     %% Bottom Row: Steps 5 to 7 (Flowing Right to Left)
     subgraph Row2 [ ]
         direction LR
-        S5["5. Annotation & Filtering"] --> S6["6. Visualization"]
+        S5["5. Data Annotation & Filtering"] --> S6["6. Data Visualization"]
         S6 --> S7["7. Biological Interpretation"]
     end
 
