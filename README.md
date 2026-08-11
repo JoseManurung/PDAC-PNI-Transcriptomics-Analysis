@@ -35,7 +35,7 @@ PDAC-PNI-Transcriptomics-Analysis/
 
 Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the **tumor microenvironment (TME)** ([Chen et al., 2023](https://doi.org/10.3390/cancers15051360); [Sarantis et al., 2020](https://doi.org/10.4251/wjgo.v12.i2.173); [Sun et al., 2024](https://doi.org/10.3389/fonc.2024.1421067)).
 
-This study utilizes the **GSE102238 dataset** ([Yang et al., 2020](https://doi.org/10.1158/0008-5472.CAN-19-2689)) to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
+      This study utilizes the **GSE102238 dataset** ([Yang et al., 2020](https://doi.org/10.1158/0008-5472.CAN-19-2689)) to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
 
 ---
 
