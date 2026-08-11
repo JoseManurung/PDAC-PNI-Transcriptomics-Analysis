@@ -79,15 +79,34 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 Below is the visual representation of the analytical steps performed in this project:
 
 ### 3.2. Pipeline Workflow
-Below is the visual representation of the analytical steps performed in this project, structured in a sequential workflow:
+Below is the visual representation of the analytical steps performed in this project:
 
-| Step 1 | Step 2 | Step 3 | Step 4 |
-| :---: | :---: | :---: | :---: |
-| **1. GEO Dataset** | ➔ | **2. Data Preprocessing** | ➔ | **3. Normalization** | ➔ | **4. Differential Expression (limma)** |
-| | | | |
-| **7. Biological Interpretation** | ⬅ | **6. Visualization** | ⬅ | **5. Annotation & Filtering** |  | *(Next Level)* |
+```mermaid
+graph LR
+    %% Baris Pertama (Kiri ke Kanan)
+    S1[1. GEO Dataset] --> S2[2. Data Preprocessing]
+    S2 --> S3[3. Normalization]
+    S3 --> S4[4. Differential Expression]
 
-> **Workflow Direction Guide:** The analysis flows sequentially from **Step 1 to 4** (left to right on the top row), drops down, and then flows from **Step 6 to 8** (right to left on the bottom row) to conclude the bioinformatics pipeline.
+    %% Penghubung turun ke Baris Kedua
+    S4 --> S5
+
+    %% Baris Kedua (Kanan ke Kiri)
+    subgraph Pipeline Continue
+        direction LR
+        S7[7. Biological Interpretation] <-- S6[6. Visualization]
+        S6 <-- S5[5. Annotation & Filtering]
+    end
+
+    %% Styling kotak biar keren dan berwarna-warni
+    style S1 fill:#1a1a2e,color:#fff,stroke:#4ecca3,stroke-width:2px
+    style S2 fill:#16213e,color:#fff,stroke:#4ecca3,stroke-width:2px
+    style S3 fill:#0f3460,color:#fff,stroke:#4ecca3,stroke-width:2px
+    style S4 fill:#533483,color:#fff,stroke:#e94560,stroke-width:2px
+    style S5 fill:#533483,color:#fff,stroke:#e94560,stroke-width:2px
+    style S6 fill:#0f3460,color:#fff,stroke:#4ecca3,stroke-width:2px
+    style S7 fill:#1a1a2e,color:#fff,stroke:#4ecca3,stroke-width:2px
+```
 
 ---
 
