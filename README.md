@@ -78,13 +78,24 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 ```mermaid
-graph LR
-    S1["1. GEO Dataset"] --> S2["2. Data Preprocessing"]
-    S2 --> S3["3. Normalization"]
-    S3 --> S4["4. Differential Expression"]
-    S4 --> S5["5. Annotation & Filtering"]
-    S5 --> S6["6. Visualization"]
-    S6 --> S7["7. Biological Interpretation"]
+graph TD
+    %% Top Row: Steps 1 to 4 (Flowing Left to Right)
+    subgraph Row1 [ ]
+        direction LR
+        S1["1. GEO Dataset"] --> S2["2. Data Preprocessing"]
+        S2 --> S3["3. Normalization"]
+        S3 --> S4["4. Differential Expression"]
+    end
+
+    %% Vertical connector from Step 4 down to Step 5
+    S4 --> S5
+
+    %% Bottom Row: Steps 5 to 7 (Flowing Right to Left)
+    subgraph Row2 [ ]
+        direction LR
+        S5["5. Annotation & Filtering"] --> S6["6. Visualization"]
+        S6 --> S7["7. Biological Interpretation"]
+    end
 
     %% Creative Colorful Styling for Each Step
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
@@ -94,6 +105,10 @@ graph LR
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
     style S7 fill:#4caf50,color:#fff,stroke:#1b5e20,stroke-width:2px
+
+    %% Remove subgraph borders and background for a clean layout
+    style Row1 fill:transparent,stroke:none
+    style Row2 fill:transparent,stroke:none
 ```
 
 ---
