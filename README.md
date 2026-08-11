@@ -82,7 +82,7 @@ graph TD
     %% Top Row: Steps 1 to 4 (Flowing Left to Right)
     subgraph Row1 [ ]
         direction LR
-        S1["1. GEO Dataset"] --> S2["2. Data Preprocessing"]
+        S1["1. Data Acquisition"] --> S2["2. Data Preprocessing"]
         S2 --> S3["3. Data Normalization"]
         S3 --> S4["4. Differential Expression Analysis (DEA)"]
     end
