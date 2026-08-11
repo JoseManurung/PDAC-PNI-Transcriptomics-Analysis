@@ -31,9 +31,9 @@ PDAC-PNI-Transcriptomics-Analysis/
 ---
 
 ## 1. Project Overview
-**Pancreatic Ductal Adenocarcinoma (PDAC)** is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **Perineural Invasion (PNI)** a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
+**Pancreatic ductal adenocarcinoma (PDAC)** is one of the most aggressive malignancies worldwide, characterized by late-stage diagnosis and high therapeutic resistance. A defining hallmark of its progression is **perineural invasion (PNI)** a process where cancer cells infiltrate the neural network, driving debilitating pain and clinical recurrence.
 
-Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the tumor microenvironment (TME) ([Chen et al., 2023](https://doi.org/10.3390/cancers15051360); [Sarantis et al., 2020](https://doi.org/10.4251/wjgo.v12.i2.173); [Sun et al., 2024](https://doi.org/10.3389/fonc.2024.1421067)). This study utilizes the **GSE102238 dataset** ([Yang et al., 2020](https://doi.org/10.1158/0008-5472.CAN-19-2689)) to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
+Rather than simple physical infiltration, PNI represents a complex molecular reprogramming of the **tumor microenvironment (TME)** ([Chen et al., 2023](https://doi.org/10.3390/cancers15051360); [Sarantis et al., 2020](https://doi.org/10.4251/wjgo.v12.i2.173); [Sun et al., 2024](https://doi.org/10.3389/fonc.2024.1421067)). This study utilizes the **GSE102238 dataset** ([Yang et al., 2020](https://doi.org/10.1158/0008-5472.CAN-19-2689)) to systematically map the bidirectional signaling loop between malignant cells and the peripheral nervous system, aiming to identify unique transcriptomic signatures that could serve as novel therapeutic targets.
 
 ---
 
@@ -127,7 +127,7 @@ To isolate the core genetic drivers, I intersected multiple clinical contrasts a
 ### 4.4. Functional Enrichment Analysis (GO & KEGG)
 The biological roles of the core biomarkers were analyzed to link gene expression to clinical phenotypes:
 
-| **Biological Processes (GO)** | **Signaling Pathways (KEGG)** |
+| **Gene Ontology (GO)** | **Kyoto Encyclopedia of Genes and Genomes (KEGG)** |
 | :---: | :---: |
 | ![Dot Plot](Results/Plots/GO_Enrichment_Dotplot_PDAC.png) | ![Bar Plot](Results/Plots/KEGG_Enrichment_Barplot_PDAC.png) |
 | *Dot plot highlighting Leukocyte Adhesion and T-cell Activation.* | *Bar plot showcasing IgSF CAM signaling and Axon Guidance.* |
@@ -138,12 +138,12 @@ The biological roles of the core biomarkers were analyzed to link gene expressio
 ---
 
 ## 5. Conclusion
-This study provides a high-resolution transcriptomic map of **Perineural Invasion (PNI)** in **Pancreatic Ductal Adenocarcinoma (PDAC)**. By systematically dissecting six clinicopathological contrasts, I have established several key conclusions:
+This study provides a high-resolution transcriptomic map of **PNI** in **PDAC**. By systematically dissecting six clinicopathological contrasts, I have established several key conclusions:
 
 * **Malignancy Overrides Localization:** The transcriptomic landscape is dominated by a robust malignant signal that remains consistent regardless of localized neural involvement. The primary oncogenic "engine" of PDAC is the main driver of the observed mRNA profiles.
 * **The "Eruption" Signature:** While PNI-only contrasts show high homeostatic stability, the transition from normal to malignant PNI-positive states triggers a massive molecular "eruption." This is evidenced by a core consensus signature of **4,857 shared DEGs**, including high-confidence biomarkers such as **CEACAM5, S100P, CST2,** and **TMPRSS4**.
 * **Molecular Hijacking:** Functional enrichment confirms that tumor cells do not move randomly; they actively exploit **Axon Guidance** and **IgSF CAM signaling** to infiltrate the peripheral nervous system. 
-* **Immune-Adhesion Crosstalk:** The convergence of **Leukocyte cell-cell adhesion** and **T-cell activation** pathways suggests that PNI is an immune-active process, characterized by complex bidirectional crosstalk between malignant cells and the inflammatory tumor microenvironment (TME).
+* **Immune-Adhesion Crosstalk:** The convergence of **Leukocyte cell-cell adhesion** and **T-cell activation** pathways suggests that PNI is an immune-active process, characterized by complex bidirectional crosstalk between malignant cells and the inflammatory **TME**.
 
 ### Summary Impact
 This research establishes a computational foundation for discovering novel diagnostic markers and therapeutic targets. By identifying the molecular pillars driving both PDAC progression and neural recruitment, these findings offer a roadmap for future studies aimed at disrupting the pathways that drive clinical recurrence and patient morbidity.
