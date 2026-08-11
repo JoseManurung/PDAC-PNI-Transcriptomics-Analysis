@@ -78,21 +78,16 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 
-| Analysis Step |
-| :---: |
-| **GEO Dataset** |
-| ▼ |
-| **Data Preprocessing** |
-| ▼ |
-| **Normalization** |
-| ▼ |
-| **Differential Expression (limma)** |
-| ▼ |
-| **Annotation & Filtering** |
-| ▼ |
-| **Visualization** |
-| ▼ |
-| **Biological Interpretation** |
+### 3.2. Pipeline Workflow
+Below is the visual representation of the analytical steps performed in this project, structured in a sequential workflow:
+
+| Step 1 | Step 2 | Step 3 | Step 4 |
+| :---: | :---: | :---: | :---: |
+| **1. GEO Dataset** | ➔ | **2. Data Preprocessing** | ➔ | **3. Normalization** | ➔ | **4. Differential Expression (limma)** |
+| | | | |
+| **7. Biological Interpretation** | ⬅ | **6. Visualization** | ⬅ | **5. Annotation & Filtering** |  | *(Next Level)* |
+
+> **Workflow Direction Guide:** The analysis flows sequentially from **Step 1 to 4** (left to right on the top row), drops down, and then flows from **Step 6 to 8** (right to left on the bottom row) to conclude the bioinformatics pipeline.
 
 ---
 
