@@ -79,26 +79,27 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 Below is the visual representation of the analytical steps performed in this project:
 
 ### 3.2. Pipeline Workflow
+
 Below is the visual representation of the analytical steps performed in this project:
 
 ```mermaid
 graph LR
-    %% Baris Pertama (Kiri ke Kanan)
+    %% Top Row: Steps 1 to 4 (Left to Right)
     S1[1. GEO Dataset] --> S2[2. Data Preprocessing]
     S2 --> S3[3. Normalization]
     S3 --> S4[4. Differential Expression]
 
-    %% Penghubung turun ke Baris Kedua
+    %% Vertical Connector to Bottom Row
     S4 --> S5
 
-    %% Baris Kedua (Kanan ke Kiri)
-    subgraph Pipeline Continue
-        direction LR
-        S7[7. Biological Interpretation] <-- S6[6. Visualization]
-        S6 <-- S5[5. Annotation & Filtering]
+    %% Bottom Row: Steps 5 to 7 (Right to Left flow)
+    subgraph Pipeline Continuation
+        direction RL
+        S5[5. Annotation & Filtering] --> S6[6. Visualization]
+        S6 --> S7[7. Biological Interpretation]
     end
 
-    %% Styling kotak biar keren dan berwarna-warni
+    %% Professional Color Styling
     style S1 fill:#1a1a2e,color:#fff,stroke:#4ecca3,stroke-width:2px
     style S2 fill:#16213e,color:#fff,stroke:#4ecca3,stroke-width:2px
     style S3 fill:#0f3460,color:#fff,stroke:#4ecca3,stroke-width:2px
