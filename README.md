@@ -53,7 +53,7 @@ The primary goal of this study is to identify Differentially Expressed Genes (DE
 ---
 
 ## 3. Methodology & Workflow
-The analysis was conducted using **[R (v4.5.2)](https://cran.r-project.org/bin/windows/base/old/4.5.2/)**. The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
+The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/windows/base/old/4.5.2/). The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
 
 ### 3.1. Analysis Pipeline
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
