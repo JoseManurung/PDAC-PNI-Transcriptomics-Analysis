@@ -5,7 +5,7 @@
 **Affiliation:** Diponegoro University
 
 [![Language](https://img.shields.io/badge/Language-100%25%20R-violet.svg)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
-[![R Version](https://img.shields.io/badge/R-v4.5.2-blue.svg)](https://www.r-project.org/)
+[![R Version](https://img.shields.io/badge/R-v4.5.2-blue.svg)](https://cran.r-project.org/bin/windows/base/old/4.5.2/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21870889-green)](https://doi.org/10.5281/zenodo.21870889)
 
@@ -53,7 +53,7 @@ The primary goal of this study is to identify Differentially Expressed Genes (DE
 ---
 
 ## 3. Methodology & Workflow
-The analysis was conducted using **R (v4.5.2)**. The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
+The analysis was conducted using **[R (v4.5.2)](https://cran.r-project.org/bin/windows/base/old/4.5.2/)**. The integrated pipeline combines data acquisition, rigorous preprocessing, and functional interpretation as follows:
 
 ### 3.1. Analysis Pipeline
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
