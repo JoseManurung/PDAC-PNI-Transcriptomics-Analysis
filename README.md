@@ -8,7 +8,7 @@
 [![R Version](https://img.shields.io/badge/R-v4.5.2-276DC3?logo=R&logoColor=white)](https://cran.r-project.org/bin/windows/base/old/4.5.2/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21874318-brightgreen?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.21870889)
-[![Last Commit](https://img.shields.io/github/Last-Commit/JoseManurung/PDAC-PNI-Transcriptomics-Analysis?logo=github&color=purple)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/commits/main)
+[![Last Commit](https://img.shields.io/github/last-commit/JoseManurung/PDAC-PNI-Transcriptomics-Analysis?logo=github&color=purple)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/commits/main)
 
 </div>
 
