@@ -83,8 +83,8 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 ```mermaid
-graph LR
-    %% Defining Nodes with Fixed Padding Spacing
+flowchart LR
+    %% Defining Nodes with Uniform HTML Spacing
     S1["&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;"]
     S2["&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;"]
     S3["&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;"]
@@ -92,30 +92,28 @@ graph LR
     S5["&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;"]
     S6["&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;"]
 
-    %% Layout Structure & Arrow Routing
-    subgraph TopRow [" "]
-        direction LR
-        S1 --> S2 --> S3
-    end
+    %% Top Row Flow (1 -> 2 -> 3)
+    S1 --> S2
+    S2 --> S3
 
-    subgraph BottomRow [" "]
-        direction RL
-        S6 <-- S5 <-- S4
-    end
-
-    %% Direct Connection from Step 3 Down to Step 4
+    %% Zig-Zag Connector (Loop Back from 3 down to 4)
     S3 --> S4
 
-    %% Custom Styling
+    %% Bottom Row Flow (4 -> 5 -> 6)
+    S4 --> S5
+    S5 --> S6
+
+    %% Invisible Structural Constraints to Force 2-Row Alignment Grid
+    S1 ~~~ S4
+    S2 ~~~ S5
+
+    %% Custom Color Palette & Aesthetics
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
     style S2 fill:#00adb5,color:#fff,stroke:#393e46,stroke-width:2px
     style S3 fill:#ff5722,color:#fff,stroke:#b23b00,stroke-width:2px
     style S4 fill:#9c27b0,color:#fff,stroke:#4a148c,stroke-width:2px
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
-
-    style TopRow fill:transparent,stroke:none
-    style BottomRow fill:transparent,stroke:none
 ```
 
 ---
