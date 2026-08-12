@@ -47,7 +47,7 @@ This study utilizes the **GSE102238 dataset** ([Yang et al., 2020](https://doi.o
 ---
 
 ## 2. Research Objectives & Comparison Groups
-The primary goal of this study is to identify Differentially Expressed Genes (DEGs) across **six PNI-related clinical contrasts**. This systematic approach allows me to isolate the specific transcriptomic signatures driven by neural invasion versus those driven by general tumorigenesis.
+The primary goal of this study is to identify Differentially Expressed Genes (DEGs) across **6 PNI-related clinical contrasts**. This systematic approach allows me to isolate the specific transcriptomic signatures driven by neural invasion versus those driven by general tumorigenesis.
 
 ### Contrasts Explored:
 1.  **PNI Effect (Tumor):** PNI-positive Tumor vs. PNI-negative Tumor
@@ -65,7 +65,7 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 ### 3.1. Analysis Pipeline
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
 2.  **Data Preprocessing:** Conditional $\log_2$ transformation using `log2()` and quantile distribution evaluation via `quantile()` to stabilize expression signal ranges.
-3.  **Data Analysis:** Modeled using the `limma` package across six distinct clinical contrasts.
+3.  **Data Analysis:** Modeled using the `limma` package across 6 distinct clinical contrasts.
 4.  **Data Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
 5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
     * **Box Plot:** `ggplot()` with `stat_boxplot()` and `geom_boxplot()` to evaluate cross-sample intensity distribution.
