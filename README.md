@@ -5,11 +5,7 @@
   &nbsp;&nbsp;
   <img src="Affiliation/biotechnology-banner.jpeg" alt="Biotechnology Banner" height="60" />
 
-  <br /><br />
-
 </div>
-
----
 
 <div align="center">
 
