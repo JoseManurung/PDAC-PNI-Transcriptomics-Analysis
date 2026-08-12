@@ -67,7 +67,7 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 2.  **Data Preprocessing:** Conditional $\log_2$ transformation using `log2()` and quantile distribution evaluation via `quantile()` to stabilize expression signal ranges.
 3.  **Data Analysis:** Modeled using the `limma` package across 6 distinct clinical contrasts.
 4.  **Data Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
-5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
+5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEGs significance:
     * **Box Plot:** `ggplot()` with `stat_boxplot()` and `geom_boxplot()` to evaluate cross-sample intensity distribution.
     * **Density Plot:** `ggplot()` with `geom_density()` to inspect overall expression profile shapes and normalization symmetry.
     * **UMAP Plot:** `umap()` algorithm followed by `geom_point()` to visualize 2D sample clustering.
