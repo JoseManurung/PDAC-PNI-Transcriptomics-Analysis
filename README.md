@@ -3,7 +3,8 @@
     <td align="left" valign="middle">
       <img src="Affiliation/undip-fsm-banner.png" alt="UNDIP FSM Banner" height="60" />
       &nbsp;&nbsp;
-      <img src="Affiliation/biotechnology-banner.png" alt="Biotechnology Program Banner" height="60" />
+      <img src="Affiliation/biotechnology-banner.png" alt="Biotechnology Banner" height="60" />
+      &nbsp;&nbsp;
 </table>
 
 ---
