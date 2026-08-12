@@ -4,8 +4,13 @@
       <img src="Affiliation/undip-fsm-banner.png" alt="UNDIP FSM Banner" height="60" />
       &nbsp;&nbsp;
       <img src="Affiliation/biotechnology-banner.png" alt="Biotechnology Banner" height="60" />
-      &nbsp;&nbsp;
+      <br /><br />
+      <h1>Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): A Multi-Contrast Bioinformatics Study</h1>
+    </td>
+  </tr>
 </table>
+
+---
 
 ---
 
