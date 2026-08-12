@@ -5,10 +5,6 @@
   &nbsp;&nbsp;
   <img src="Affiliation/biotechnology-banner.jpeg" alt="Biotechnology Banner" height="60" />
 
-</div>
-
-<div align="center">
-
 # Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study
 **Author:** Yosia Jose Rasdiva Manurung  
 **Affiliation:** Biotechnology Study Program, Faculty of Science and Mathematics, Diponegoro University
