@@ -5,7 +5,7 @@
 **Affiliation:** Diponegoro University
 
 <!-- Badge Section -->
-[![Language](https://img.shields.io/badge/Languages-R%20100%25-blue?logo=github&color=blue)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/search?l=r)
+[![Language](https://img.shields.io/badge/Language-R%20100%25-blue?logo=github&color=blue)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/search?l=r)
 [![R Version](https://img.shields.io/badge/R-v4.5.2-276DC3?logo=R&logoColor=blue)](https://cran.r-project.org/bin/windows/base/old/4.5.2/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?logo=github&logoColor=black)](LICENSE)
 [![Release](https://img.shields.io/badge/Release-v1.0.3-red?logo=github&logoColor=white)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/releases)
