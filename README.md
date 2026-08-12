@@ -29,6 +29,7 @@
 
 ```text
 PDAC-PNI-Transcriptomics-Analysis/
+├── Affiliation/     # Institutional branding banners
 ├── Dataset/         # Curated expression matrix and metadata from GSE102238
 ├── Results/
 │   ├── Data_Tables/ # Statistical output of DEGs (CSV/Excel tables)
