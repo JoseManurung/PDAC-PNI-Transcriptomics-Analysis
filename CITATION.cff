@@ -26,9 +26,8 @@ identifiers:
     value: "10.5281/zenodo.21870889"
     description: "Concept DOI representing all versions of the repository"
 
-# Explicitly defines how GitHub formats the citation entry
 preferred-citation:
-  type: software
+  type: generic
   title: "Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study"
   authors:
     - family-names: "Manurung"
@@ -39,7 +38,5 @@ preferred-citation:
   version: "1.0.3"
   doi: "10.5281/zenodo.21870889"
   url: "https://doi.org/10.5281/zenodo.21870889"
-  institution:
-    name: "Zenodo"
   publisher:
     name: "Zenodo"
