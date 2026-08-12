@@ -1,12 +1,4 @@
-<table border="0" width="100%">
-  <tr>
-    <td align="left" valign="middle">
-      <img src="Affiliation/undip-fsm-banner.png" alt="UNDIP FSM Banner" height="60" />
-      &nbsp;&nbsp;
-      <img src="Affiliation/biotechnology-banner.png" alt="Biotechnology Banner" height="60" />
-</table>
 
----
 
 <div align="center">
 
