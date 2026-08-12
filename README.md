@@ -75,10 +75,10 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
     * **Heatmap:** `pheatmap()` using Global ANOVA and Ward.D2 clustering for top 50 DEGs.
     * **Scatter Plot:** `ggplot()` with `geom_smooth(method = "gam")` to profile gene expression stability (Mean vs. SD) across clinical cohorts.
     * **Venn Diagram:** `ggVennDiagram()` with a 6-set elliptical layout (`shape_id = "601"`) to identify core biomarkers across all clinical contrasts.
-6.  **Data Interpretation:** Functional enrichment analysis to elucidate biological mechanisms:
+6.  **Data Interpretation:** Functional enrichment analysis and visual mapping of biological mechanisms:
     * **ID Conversion:** `bitr()` from `clusterProfiler` using `org.Hs.eg.db` to map HGNC Symbols to Entrez IDs.
-    * **Gene Ontology (GO):** `enrichGO()` focusing on Biological Processes (`ont = "BP"`) with Benjamini-Hochberg (`BH`) $p$-value adjustment.
-    * **Kyoto Encyclopedia of Genes and Genomes (KEGG):** `enrichKEGG()` for *Homo sapiens* (`organism = 'hsa'`) to identify metabolic and signaling pathway alterations.
+    * **Gene Ontology (GO) Analysis:** `enrichGO()` focusing on Biological Processes (`ont = "BP"`) evaluated with `dotplot()` for top 15 enriched terms.
+    * **Kyoto Encyclopedia of Genes and Genomes (KEGG) Pathway Analysis:** `enrichKEGG()` for *Homo sapiens* (`organism = 'hsa'`) visualized via `barplot()` based on gene count.
 
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
