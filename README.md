@@ -12,7 +12,7 @@
 
 <!-- Badge Section -->
 [![Duration](https://img.shields.io/badge/Duration-22%20Feb%20--%2008%20Mar%202026-purple?style=flat&logo=googlecalendar&logoColor=pink)](Script/Coding_GSE102238.R)
-[![Last Update](https://img.shields.io/badge/Last%20Update-15%20Mar%202026-orange?style=flat&logo=clockify&logoColor=yellow)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis)
+[![Last Update](https://img.shields.io/badge/Last%20Update-15%20Mar%202026-orange?style=flat&logo=clockify&logoColor=yellow)](Script/Coding_GSE102238.R)
 [![Last Commit](https://img.shields.io/github/last-commit/JoseManurung/PDAC-PNI-Transcriptomics-Analysis?logo=github&color=purple)](https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis/commits/main)
 
 </div>
