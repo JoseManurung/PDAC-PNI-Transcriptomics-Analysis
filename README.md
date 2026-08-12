@@ -94,7 +94,7 @@ graph TD
     subgraph Row2 [ ]
         direction LR
         S4["4. Data Annotation"] --> S5["5. Data Visualization"]
-        S5 --> S6["6. Biological Interpretation"]
+        S5 --> S6["6. Data Interpretation"]
     end
 
     %% Creative Colorful Styling for Each Step
