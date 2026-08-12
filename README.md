@@ -82,9 +82,8 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
-
 ```mermaid
-graph TD
+graph LR
     %% Left Column Group (Flowing Bottom-to-Top: 1 -> 2 -> 3)
     subgraph Col1 [" "]
         direction BT
@@ -101,6 +100,9 @@ graph TD
 
     %% Horizontal Top Connector (Bridge from Step 3 Across to Step 4)
     S3 --> S4
+
+    %% Alignment Pin (Ensures Bottom Nodes Stay Level)
+    S1 ~~~ S6
 
     %% Color Palette and Styling Definitions
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
