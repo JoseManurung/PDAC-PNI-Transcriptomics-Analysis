@@ -82,24 +82,27 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
+
 ```mermaid
-flowchart TD
-    %% Baris Atas (Dibuat horizontal dengan subgraph LR)
-    subgraph Baris1 [" "]
-        direction LR
-        S1["&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;"] --> S2["&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;"] --> S3["&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;"]
+graph TD
+    %% Left Column Group (Flowing Bottom-to-Top: 1 -> 2 -> 3)
+    subgraph Col1 [" "]
+        direction BT
+        S1["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"] --> S2["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+        S2 --> S3["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
     end
 
-    %% Baris Bawah (Dibuat horizontal dengan subgraph LR)
-    subgraph Baris2 [" "]
-        direction LR
-        S4["&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;"] --> S5["&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;"] --> S6["&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;"]
+    %% Right Column Group (Flowing Top-to-Bottom: 4 -> 5 -> 6)
+    subgraph Col2 [" "]
+        direction TB
+        S4["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"] --> S5["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+        S5 --> S6["&nbsp;&nbsp;&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;&nbsp;&nbsp;"]
     end
 
-    %% Garis Penghubung Zig-Zag (Dari Ujung Kanan Atas ke Ujung Kiri Bawah)
+    %% Horizontal Top Connector (Bridge from Step 3 Across to Step 4)
     S3 --> S4
 
-    %% Pewarnaan Node / Kotak
+    %% Color Palette and Styling Definitions
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
     style S2 fill:#00adb5,color:#fff,stroke:#393e46,stroke-width:2px
     style S3 fill:#ff5722,color:#fff,stroke:#b23b00,stroke-width:2px
@@ -107,9 +110,9 @@ flowchart TD
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
 
-    %% Menghilangkan border kotak pembungkus baris agar rapi
-    style Baris1 fill:transparent,stroke:none
-    style Baris2 fill:transparent,stroke:none
+    %% Hide Subgraph Borders for Clean Grid Alignment
+    style Col1 fill:transparent,stroke:none
+    style Col2 fill:transparent,stroke:none
 ```
 
 ---
