@@ -27,7 +27,7 @@ PDAC-PNI-Transcriptomics-Analysis/
 ├── Dataset/         # Curated expression matrix and metadata from GSE102238
 ├── Results/
 │   ├── Data_Tables/ # Statistical output of DEGs (CSV/Excel tables)
-│   └── Plots/       # Visualizations (boxplot, density plot, UMAP plot, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
+│   └── Plots/       # Visualizations (box plot, density plot, UMAP plot, volcano plots, heatmaps, scatter plot, venn diagram, dot plot, and bar plot)
 ├── Script/          # Core analytical engine containing end-to-end R scripts for the entire bioinformatics workflow, from raw GEO data to biological interpretation
 ├── .gitignore       # Git exclusion rules for temporary/system files
 ├── CITATION.cff     # Academic citation metadata for the repository and DOI
@@ -68,7 +68,7 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 3.  **Data Analysis:** Modeled using the `limma` package across six distinct clinical contrasts.
 4.  **Data Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
 5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
-    * **Boxplot & Density Plot:** `ggplot()` with `stat_boxplot` and `geom_density` to verify normalization.
+    * **Box Plot & Density Plot:** `ggplot()` with `stat_boxplot` and `geom_density` to verify normalization.
     * **UMAP Plot:** `umap()` algorithm followed by `geom_point()` to visualize 2D sample clustering.
     * **Volcano Plot:** Custom function `make_volcano()` mapping $\log_2\text{FC}$ vs. $-\log_{10}(\text{Adjusted } P\text{-value})$.
     * **Heatmap:** `pheatmap()` using Global ANOVA and Ward.D2 clustering for top 50 DEGs.
