@@ -10,6 +10,8 @@ version: "1.0.3"
 date-released: "2026-08-12"
 doi: "10.5281/zenodo.21870889"
 url: "https://github.com/JoseManurung/PDAC-PNI-Transcriptomics-Analysis"
+publisher:
+  name: "Zenodo"
 keywords:
   - bioinformatics
   - biomedical-informatics
@@ -25,18 +27,3 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21870889"
     description: "Concept DOI representing all versions of the repository"
-
-preferred-citation:
-  type: generic
-  title: "Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study"
-  authors:
-    - family-names: "Manurung"
-      given-names: "Yosia Jose Rasdiva"
-      orcid: "https://orcid.org/0009-0001-8237-959X"
-  year: 2026
-  month: 8
-  version: "1.0.3"
-  doi: "10.5281/zenodo.21870889"
-  url: "https://doi.org/10.5281/zenodo.21870889"
-  publisher:
-    name: "Zenodo"
