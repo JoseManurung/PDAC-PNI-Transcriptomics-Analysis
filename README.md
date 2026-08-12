@@ -84,34 +84,28 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 Below is the visual representation of the analytical steps performed in this project:
 ```mermaid
 graph TD
-    %% Top Row: Steps 1 to 4 (Flowing Left to Right)
-    subgraph Row1 [ ]
-        direction LR
-        S1["1. Data Acquisition"] --> S2["2. Data Preprocessing"]
-        S2 --> S3["3. Data Analysis"]
-    end
+    %% Node Definitions with Inline Padding for Uniform Box Sizes
+    S1["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S2["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S3["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S4["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S5["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S6["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
 
-    %% Vertical connector from Step 3 down to Step 4
+    %% Sequential Flow Connections
+    S1 --> S2
+    S2 --> S3
     S3 --> S4
+    S4 --> S5
+    S5 --> S6
 
-    %% Bottom Row: Steps 4 to 6 (Flowing Right to Left)
-    subgraph Row2 [ ]
-        direction LR
-        S4["4. Data Annotation"] --> S5["5. Data Visualization"]
-        S5 --> S6["6. Data Interpretation"]
-    end
-
-    %% Creative Colorful Styling for Each Step
+    %% Color Palette and Styling Definitions
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
     style S2 fill:#00adb5,color:#fff,stroke:#393e46,stroke-width:2px
     style S3 fill:#ff5722,color:#fff,stroke:#b23b00,stroke-width:2px
     style S4 fill:#9c27b0,color:#fff,stroke:#4a148c,stroke-width:2px
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
-
-    %% Remove subgraph borders and background for a clean layout
-    style Row1 fill:transparent,stroke:none
-    style Row2 fill:transparent,stroke:none
 ```
 
 ---
