@@ -83,27 +83,21 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 ```mermaid
-graph LR
-    %% Left Column Group (Flowing Bottom-to-Top: 1 -> 2 -> 3)
-    subgraph Col1 [" "]
-        direction BT
-        S1["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"] --> S2["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
-        S2 --> S3["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
-    end
-
 graph TD
-%% Horizontal Top Connector (Bridge from Step 3 Across to Step 4)
+    %% Node Definitions with Inline Padding for Uniform Box Sizes
+    S1["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S2["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S3["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S4["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S5["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    S6["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+
+    %% Sequential Flow Connections
+    S1 --> S2
+    S2 --> S3
     S3 --> S4
-
-    %% Right Column Group (Flowing Top-to-Bottom: 4 -> 5 -> 6)
-    subgraph Col2 [" "]
-        direction TB
-        S4["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"] --> S5["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
-        S5 --> S6["&nbsp;&nbsp;&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;&nbsp;&nbsp;"]
-    end
-
-    %% Alignment Pin (Ensures Bottom Nodes Stay Level)
-    S1 ~~~ S6
+    S4 --> S5
+    S5 --> S6
 
     %% Color Palette and Styling Definitions
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
@@ -112,10 +106,6 @@ graph TD
     style S4 fill:#9c27b0,color:#fff,stroke:#4a148c,stroke-width:2px
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
-
-    %% Hide Subgraph Borders for Clean Grid Alignment
-    style Col1 fill:transparent,stroke:none
-    style Col2 fill:transparent,stroke:none
 ```
 
 ---
