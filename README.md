@@ -6,6 +6,18 @@
   <img src="Affiliation/biotechnology-banner.jpeg" alt="Biotechnology Banner" height="60" />
 
   <br /><br />
+  
+<!-- Primary Project Title -->
+  <h1>Integrative Transcriptomic Profiling of Perineural Invasion (PNI) Signatures in Pancreatic Ductal Adenocarcinoma (PDAC): a Multi-Contrast Bioinformatics Study</h1>
+
+  <p>
+    <b>Author:</b> Yosia Jose Rasdiva Manurung<br />
+    <b>Affiliation:</b> Biotechnology Study Program, Faculty of Science and Mathematics, Diponegoro University
+  </p>
+
+</div>
+
+---
 
 <div align="center">
 
