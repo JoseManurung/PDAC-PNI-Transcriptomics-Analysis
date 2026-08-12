@@ -83,23 +83,20 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 ### 3.2. Pipeline Workflow
 Below is the visual representation of the analytical steps performed in this project:
 ```mermaid
-graph TD
-    %% Top Row Group (1 -> 2 -> 3)
-    subgraph Row1 [" "]
-        direction LR
-        S1["&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;"] --> S2["&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;"]
-        S2 --> S3["&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;"]
-    end
+graph LR
+    %% Pengaturan Baris Atas (Kiri ke Kanan)
+    S1["&nbsp;&nbsp; 1. Data Acquisition &nbsp;&nbsp;"] --> S2["&nbsp;&nbsp; 2. Data Preprocessing &nbsp;&nbsp;"]
+    S2 --> S3["&nbsp;&nbsp;&nbsp;&nbsp; 3. Data Analysis &nbsp;&nbsp;&nbsp;&nbsp;"]
 
-    %% Bottom Row Group (4 -> 5 -> 6)
-    subgraph Row2 [" "]
-        direction LR
-        S4["&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;"] --> S5["&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;"]
-        S5 --> S6["&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;"]
-    end
+    %% Hubungan Zig-Zag Turun Menuju Baris Bawah
+    S3 --> S4["&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;"]
 
-    %% Snake / Zig-Zag Connector (Looping from 3 down and back to 4)
-    S3 --> S4
+    %% Pengaturan Baris Bawah (Lanjut Kiri ke Kanan)
+    S4 --> S5["&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;"]
+    S5 --> S6["&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;"]
+
+    %% Trik Jangkar Tak Terlihat agar Kotak 1 berada persis di atas Kotak 4
+    S1 ~~~ S4
 
     %% Custom Color Palette & Aesthetics
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
@@ -108,10 +105,6 @@ graph TD
     style S4 fill:#9c27b0,color:#fff,stroke:#4a148c,stroke-width:2px
     style S5 fill:#e91e63,color:#fff,stroke:#880e4f,stroke-width:2px
     style S6 fill:#ff9800,color:#fff,stroke:#e65100,stroke-width:2px
-
-    %% Hide Subgraph Borders for Clean Multi-Row Layout
-    style Row1 fill:transparent,stroke:none
-    style Row2 fill:transparent,stroke:none
 ```
 
 ---
