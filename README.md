@@ -99,7 +99,7 @@ graph LR
     end
 
     %% Horizontal Top Connector (Bridge from Step 3 Across to Step 4)
-    S3 --> S4
+    S3 --> S4 [Upper]
 
     %% Alignment Pin (Ensures Bottom Nodes Stay Level)
     S1 ~~~ S6
