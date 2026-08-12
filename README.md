@@ -5,15 +5,6 @@
   &nbsp;&nbsp;
   <img src="Affiliation/biotechnology-banner.jpeg" alt="Biotechnology Banner" height="60" />
 
-</div>
-
-<div align="center">
-
-  <!-- Institutional & Program Banner Header -->
-  <img src="Affiliation/undip-fsm-banner.png" alt="UNDIP FSM Banner" height="60" />
-  &nbsp;&nbsp;
-  <img src="Affiliation/biotechnology-banner.jpeg" alt="Biotechnology Banner" height="60" />
-
   <br /><br />
 
   <!-- Primary Project Title -->
