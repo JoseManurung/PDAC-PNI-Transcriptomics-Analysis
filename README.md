@@ -94,12 +94,11 @@ graph LR
     %% Right Column Group (Flowing Top-to-Bottom: 4 -> 5 -> 6)
     subgraph Col2 [" "]
         direction TB
+    %% Horizontal Top Connector (Bridge from Step 3 Across to Step 4)
+    S3 --> S4 
         S4["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Data Annotation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"] --> S5["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Data Visualization &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
         S5 --> S6["&nbsp;&nbsp;&nbsp;&nbsp; 6. Data Interpretation &nbsp;&nbsp;&nbsp;&nbsp;"]
     end
-
-    %% Horizontal Top Connector (Bridge from Step 3 Across to Step 4)
-    S3 --> S4 NEWLINE
 
     %% Alignment Pin (Ensures Bottom Nodes Stay Level)
     S1 ~~~ S6
