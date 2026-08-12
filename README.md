@@ -72,7 +72,7 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
     * **Density Plot:** `ggplot()` with `geom_density()` to inspect overall expression profile shapes and normalization symmetry.
     * **UMAP Plot:** `umap()` algorithm followed by `geom_point()` to visualize 2D sample clustering.
     * **Volcano Plots:** Custom function `make_volcano()` mapping $\log_2\text{FC}$ vs. $-\log_{10}(\text{Adjusted } P\text{-value})$ across 6 distinct clinical contrasts (`v1`–`v6`).
-   * **Heatmaps:** `pheatmap()` with Ward.D2 hierarchical clustering for top 50 DEGs, featuring 1 Global ANOVA overview across 100 samples (`H0`) and 6 contrast-specific subsets (`H1`–`H6`).
+    * **Heatmaps:** `pheatmap()` with Ward.D2 hierarchical clustering for top 50 DEGs, featuring 1 Global ANOVA overview across 100 samples (`H0`) and 6 contrast-specific subsets (`H1`–`H6`).
     * **Scatter Plot:** `ggplot()` with `geom_smooth(method = "gam")` to profile gene expression stability (Mean vs. SD) across clinical cohorts.
     * **Venn Diagram:** `ggVennDiagram()` with a 6-set elliptical layout (`shape_id = "601"`) to identify core biomarkers across all clinical contrasts.
 6.  **Data Interpretation:** Functional enrichment analysis and visual mapping of biological mechanisms:
