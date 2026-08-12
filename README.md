@@ -64,7 +64,7 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 
 ### 3.1. Analysis Pipeline
 1.  **Data Acquisition:** Retrieval of raw data via `GEOquery`.
-2.  **Data Normalization:** Conditional $\log_2$ transformation using `log2()` and quantile distribution evaluation via `quantile()` to stabilize expression signal ranges.
+2.  **Data Preprocessing:** Conditional $\log_2$ transformation using `log2()` and quantile distribution evaluation via `quantile()` to stabilize expression signal ranges.
 3.  **Data Analysis:** Modeled using the `limma` package across six distinct clinical contrasts.
 4.  **Data Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
 5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
@@ -86,7 +86,7 @@ graph TD
     %% Top Row: Steps 1 to 4 (Flowing Left to Right)
     subgraph Row1 [ ]
         direction LR
-        S1["1. Data Acquisition"] --> S2["2. Data Normalization"]
+        S1["1. Data Acquisition"] --> S2["2. Data Preprocessing"]
         S2 --> S3["3. Data Analysis"]
     end
 
