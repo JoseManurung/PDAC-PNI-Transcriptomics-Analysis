@@ -99,7 +99,7 @@ graph TD
     end
 
     %% Snake / Zig-Zag Connector (Looping from 3 down and back to 4)
-    S3 ~~~ S4
+    S3 ~~~> S4
 
     %% Custom Color Palette & Aesthetics
     style S1 fill:#3f72af,color:#fff,stroke:#112d4e,stroke-width:2px
