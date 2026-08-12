@@ -68,7 +68,8 @@ The analysis was conducted using [R (v4.5.2)](https://cran.r-project.org/bin/win
 3.  **Data Analysis:** Modeled using the `limma` package across six distinct clinical contrasts.
 4.  **Data Annotation:** Systematic mapping of probes to HGNC Symbols via `biomaRt` and relational merging with platform metadata.
 5.  **Data Visualization:** Generation of high-fidelity plots to assess data distribution and DEG significance:
-    * **Box Plot & Density Plot:** `ggplot()` with `stat_boxplot` and `geom_density` to verify normalization.
+    * **Box Plot:** `ggplot()` with `stat_boxplot()` and `geom_boxplot()` to evaluate cross-sample intensity distribution.
+    * **Density Plot:** `ggplot()` with `geom_density()` to inspect overall expression profile shapes and normalization symmetry.
     * **UMAP Plot:** `umap()` algorithm followed by `geom_point()` to visualize 2D sample clustering.
     * **Volcano Plot:** Custom function `make_volcano()` mapping $\log_2\text{FC}$ vs. $-\log_{10}(\text{Adjusted } P\text{-value})$.
     * **Heatmap:** `pheatmap()` using Global ANOVA and Ward.D2 clustering for top 50 DEGs.
